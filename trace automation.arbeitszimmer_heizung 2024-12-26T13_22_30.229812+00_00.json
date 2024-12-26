@@ -1,0 +1,2021 @@
+{
+  "trace": {
+    "last_step": "action/3/default/8/if/condition/0",
+    "run_id": "3056bf79da75f963d168891335e2590b",
+    "state": "stopped",
+    "script_execution": "finished",
+    "timestamp": {
+      "start": "2024-12-26T13:22:30.229812+00:00",
+      "finish": "2024-12-26T13:22:30.324830+00:00"
+    },
+    "domain": "automation",
+    "item_id": "1724749494825",
+    "trigger": "binary_sensor.arbeitszimmer_kontakt_fenster_rechts_contact via template",
+    "trace": {
+      "trigger/18": [
+        {
+          "path": "trigger/18",
+          "timestamp": "2024-12-26T13:22:30.269518+00:00",
+          "changed_variables": {
+            "this": {
+              "entity_id": "automation.arbeitszimmer_heizung",
+              "state": "on",
+              "attributes": {
+                "id": "1724749494825",
+                "last_triggered": "2024-12-26T08:41:12.851503+00:00",
+                "mode": "queued",
+                "current": 0,
+                "max": 10,
+                "friendly_name": "Arbeitszimmer Heizung"
+              },
+              "last_changed": "2024-12-23T18:48:05.871979+00:00",
+              "last_reported": "2024-12-26T08:41:15.151938+00:00",
+              "last_updated": "2024-12-26T08:41:15.151938+00:00",
+              "context": {
+                "id": "01JG1210V8RQGCEZZFH4W8PA8D",
+                "parent_id": "01JG1203E8CJZ2XH8GZAFPENQ5",
+                "user_id": null
+              }
+            },
+            "trigger": {
+              "platform": "template",
+              "entity_id": "binary_sensor.arbeitszimmer_kontakt_fenster_rechts_contact",
+              "from_state": {
+                "entity_id": "binary_sensor.arbeitszimmer_kontakt_fenster_rechts_contact",
+                "state": "on",
+                "attributes": {
+                  "device_class": "door",
+                  "friendly_name": "Arbeitszimmer Kontakt Fenster rechts Door"
+                },
+                "last_changed": "2024-12-26T08:40:42.696242+00:00",
+                "last_reported": "2024-12-26T08:40:42.696242+00:00",
+                "last_updated": "2024-12-26T08:40:42.696242+00:00",
+                "context": {
+                  "id": "01JG1203E8CJZ2XH8GZAFPENQ5",
+                  "parent_id": null,
+                  "user_id": null
+                }
+              },
+              "to_state": {
+                "entity_id": "binary_sensor.arbeitszimmer_kontakt_fenster_rechts_contact",
+                "state": "off",
+                "attributes": {
+                  "device_class": "door",
+                  "friendly_name": "Arbeitszimmer Kontakt Fenster rechts Door"
+                },
+                "last_changed": "2024-12-26T13:22:00.226463+00:00",
+                "last_reported": "2024-12-26T13:22:00.226463+00:00",
+                "last_updated": "2024-12-26T13:22:00.226463+00:00",
+                "context": {
+                  "id": "01JG1J35D2WAN7R9ADNE6WDR8W",
+                  "parent_id": null,
+                  "user_id": null
+                }
+              },
+              "id": "temperature_change_window_off",
+              "idx": "18",
+              "alias": null,
+              "for": {
+                "__type": "<class 'datetime.timedelta'>",
+                "total_seconds": 30
+              },
+              "description": "binary_sensor.arbeitszimmer_kontakt_fenster_rechts_contact via template"
+            },
+            "input_trvs": [
+              "climate.arbeitszimmer_heizung"
+            ],
+            "input_temperature_sensor": "sensor.arbeitszimmer_temperatur_temperature",
+            "is_temperature_sensor_defined": true,
+            "input_persons": [],
+            "input_mode_guest": null,
+            "input_people_entering_home_duration": {
+              "hours": 0,
+              "minutes": 0,
+              "seconds": 2
+            },
+            "input_people_leaving_home_duration": {
+              "hours": 0,
+              "minutes": 0,
+              "seconds": 2
+            },
+            "input_person_count": 0,
+            "is_person_defined": false,
+            "is_guest_mode_defined": false,
+            "input_schedulers": [
+              "schedule.heizplan_arbeitszimmer"
+            ],
+            "input_scheduler_selector": null,
+            "input_scheduler_presence": null,
+            "is_scheduler_presence_defined": false,
+            "input_temperature_comfort": "input_number.temperatur_arbeitszimmer",
+            "input_temperature_eco": [],
+            "input_hvac_mode": "heat",
+            "factor": 1,
+            "is_heat_only_if_below_real_temp": true,
+            "input_mode_winter": "input_boolean.winter_modus",
+            "input_mode_outside_temperature": null,
+            "input_mode_outside_temperature_threshold": 15,
+            "input_mode_room_temperature_threshold": 18,
+            "input_mode_room_temperature": false,
+            "input_invert_winter_mode_value": false,
+            "input_mode_party": [],
+            "input_adjustments": "[]",
+            "input_calibration_timeout": {
+              "hours": 0,
+              "minutes": 1,
+              "seconds": 0
+            },
+            "input_windows": [
+              "binary_sensor.arbeitszimmer_kontakt_fenster_rechts_contact"
+            ],
+            "input_presence_sensor": null,
+            "is_presence_sensor_defined": false,
+            "input_presence_reaction_on_time": {
+              "hours": 0,
+              "minutes": 5,
+              "seconds": 0
+            },
+            "input_presence_reaction_off_time": {
+              "hours": 0,
+              "minutes": 5,
+              "seconds": 0
+            },
+            "input_proximity": null,
+            "input_proximity_duration": {
+              "hours": 0,
+              "minutes": 2,
+              "seconds": 0
+            },
+            "input_proximity_distance": 500,
+            "input_frost_protection_duration": {
+              "days": 0,
+              "hours": 0,
+              "minutes": 0,
+              "seconds": 0
+            },
+            "input_liming_protection": false,
+            "input_liming_protection_day": "Mon",
+            "input_liming_protection_time": "12:00:00",
+            "input_liming_in_winter": false,
+            "input_temperature_comfort_entity": "input_number.temperatur_arbeitszimmer",
+            "input_temperature_comfort_static": 22,
+            "input_temperature_eco_entity": null,
+            "input_temperature_eco_static": 19,
+            "input_frost_protection_temp": 5,
+            "input_windows_reaction_time_open": {
+              "hours": 0,
+              "minutes": 0,
+              "seconds": 30
+            },
+            "input_windows_reaction_time_close": {
+              "hours": 0,
+              "minutes": 0,
+              "seconds": 30
+            },
+            "input_window_open_temperature": 0,
+            "input_party_legacy_restore": false,
+            "input_window_legacy_restore": false,
+            "is_legacy_restore": false,
+            "input_force_max_temperature": "input_boolean.heizung_max_uberall",
+            "input_force_eco_temperature": [],
+            "input_calibration_delta": 0.5,
+            "input_calibration_generic": false,
+            "input_calibration_step_size": "auto",
+            "input_calibration_key_word": "calibration",
+            "input_generic_calibration_offset": 5,
+            "input_aggressive_mode_offset": 0,
+            "input_aggressive_mode_range": 0,
+            "input_aggressive_mode_calibration": false,
+            "input_away_offset": 0,
+            "is_scheduler_away_mode": false,
+            "is_presence_away_mode": false,
+            "presence_ignor_people": false,
+            "is_reset_temperature": false,
+            "is_off_instead_min": true,
+            "is_not_off_but_min": false,
+            "is_fahrenheit": false,
+            "is_physical_change_enabled": false,
+            "input_action_call_delay": {
+              "hours": 0,
+              "minutes": 0,
+              "seconds": 2
+            },
+            "input_custom_action": null,
+            "input_startup_delay": {
+              "hours": 0,
+              "minutes": 2,
+              "seconds": 0
+            },
+            "input_fully_open_difference": 1,
+            "input_valve_opening_keyword": "valve_opening_degree",
+            "input_valve_positioning_step_size": "10",
+            "input_valve_positioning_mode": "off",
+            "input_valve_positioning_timeout": {
+              "hours": 0,
+              "minutes": 20,
+              "seconds": 0
+            },
+            "invalid_states": [
+              "unknown",
+              "unavailable"
+            ],
+            "value_temperature_sensor": 17.7,
+            "valid_temperature_sensor": true,
+            "current_time_stamp": "2024-12-26 14:22:30.233048+01:00",
+            "is_metric": false,
+            "up_time_sensor": "sensor.uptime",
+            "is_uptime_defined": true,
+            "uptime": "2024-12-23 11:47:44+00:00",
+            "startup_delay": null,
+            "state_outside_temp": null,
+            "state_ahc": true,
+            "is_proximity_defined": false,
+            "state_proximity_arrived": false,
+            "state_proximity_way_home": false,
+            "is_guest_mode": false,
+            "is_anybody_home": false,
+            "is_anybody_home_or_proximity": false,
+            "active_scheduler": "schedule.heizplan_arbeitszimmer",
+            "is_scheduler_defined": true,
+            "state_scheduler": true,
+            "is_presence_scheduler_defined": false,
+            "state_presence_scheduler": false,
+            "state_presence_sensor": false,
+            "state_presence": false,
+            "is_force_max_temperature": false,
+            "is_force_eco_temperature": false,
+            "active_party_entity": null,
+            "state_party": false,
+            "party_temp": null,
+            "is_away": false,
+            "state_window": false,
+            "is_aggressive_mode": false,
+            "is_aggressive_mode_calibration": false,
+            "is_frost_protection": false,
+            "is_liming_protection": false,
+            "valves": [
+              "climate.arbeitszimmer_heizung"
+            ],
+            "valves_unsupported": [],
+            "valves_off_mode": [
+              "climate.arbeitszimmer_heizung"
+            ],
+            "valves_without_off_mode": [],
+            "valves_tado": [],
+            "valves_xiaomi_xiaomi": [],
+            "valves_xiaomi_aqara": [],
+            "valves_xiaomi": [],
+            "valves_danfoss": [],
+            "valves_popp": [],
+            "valves_hive": [],
+            "valves_dph": [],
+            "valves_calibration_common": [
+              "climate.arbeitszimmer_heizung"
+            ],
+            "last_comfort_entity_change": "2024-12-25 16:41:37.961173+00:00",
+            "last_eco_entity_change": null,
+            "latest_entry_today": null,
+            "latest_entry_day_before": null,
+            "entry": null,
+            "entry_time": "",
+            "entry_comfort_temp": null,
+            "entry_eco_temp": null,
+            "entry_calibration": true,
+            "trigger_id_defined": true,
+            "is_calibration_trigger": false,
+            "is_generic_calibration_trigger": false,
+            "is_generic_calibration": false,
+            "is_aggressive_mode_trigger": false,
+            "is_change_trigger": false,
+            "is_pysical_change": false,
+            "is_adjustment_trigger": false,
+            "is_reset": false,
+            "is_changes_trigger": true,
+            "is_scene_create_trigger": false,
+            "is_scene_apply_trigger": true,
+            "is_scene_destroy_trigger": false,
+            "scene_entities": [
+              "climate.arbeitszimmer_heizung"
+            ],
+            "scene_window_id": "scene.arbeitszimmer_heizung_window",
+            "scene_party_id": "scene.arbeitszimmer_heizung_party",
+            "scenes_all": [
+              "scene.arbeitszimmer_heizung_window",
+              "scene.arbeitszimmer_heizung_party"
+            ],
+            "scene_to_apply": "scene.arbeitszimmer_heizung_window",
+            "scenes_to_destroy": [],
+            "scene_to_create": "scene.arbeitszimmer_heizung_party",
+            "set_comfort": true,
+            "set_max_temperature": false,
+            "mode": "heat",
+            "temperature_comfort_of_entity": 22,
+            "temperature_eco_of_entity": null,
+            "temperature_comfort": 22,
+            "temperature_away": 22,
+            "temperature_eco": 19,
+            "target_temperature": 22,
+            "changes": {
+              "climate.arbeitszimmer_heizung": [
+                {
+                  "mode": "heat",
+                  "temp": 22
+                }
+              ]
+            },
+            "positioning": [],
+            "reset_data": [],
+            "is_reset_trigger": false,
+            "is_native_calibration": true,
+            "is_native_calibration_trigger": false,
+            "rounding_mode": "auto",
+            "calibration_tado": {},
+            "calibration_xiaomi": {},
+            "calibration_dph": {},
+            "calibration_common": {},
+            "calibration_value_set": {},
+            "no_changes": false,
+            "scene_trigger": true,
+            "change_trigger": false,
+            "reset_trigger": false,
+            "calibration_trigger": false,
+            "positioning_trigger": false,
+            "automation_name": "Arbeitszimmer Heizung",
+            "warnings": [],
+            "thermostat_temperatures": [
+              19
+            ]
+          }
+        }
+      ],
+      "condition/0": [
+        {
+          "path": "condition/0",
+          "timestamp": "2024-12-26T13:22:30.269688+00:00",
+          "result": {
+            "result": true
+          }
+        }
+      ],
+      "condition/0/conditions/0": [
+        {
+          "path": "condition/0/conditions/0",
+          "timestamp": "2024-12-26T13:22:30.269859+00:00",
+          "result": {
+            "result": false,
+            "entities": []
+          }
+        }
+      ],
+      "condition/0/conditions/1": [
+        {
+          "path": "condition/0/conditions/1",
+          "timestamp": "2024-12-26T13:22:30.270537+00:00",
+          "result": {
+            "result": true,
+            "entities": []
+          }
+        }
+      ],
+      "action/0": [
+        {
+          "path": "action/0",
+          "timestamp": "2024-12-26T13:22:30.271867+00:00",
+          "changed_variables": {
+            "context": {
+              "id": "01JG1J42PNAFNKZT9TS5ZYXSNT",
+              "parent_id": "01JG1J35D2WAN7R9ADNE6WDR8W",
+              "user_id": null
+            },
+            "is_delayed": false
+          }
+        }
+      ],
+      "action/1": [
+        {
+          "path": "action/1",
+          "timestamp": "2024-12-26T13:22:30.272915+00:00",
+          "result": {
+            "params": {
+              "domain": "system_log",
+              "service": "write",
+              "service_data": {
+                "message": "AHC - Arbeitszimmer Heizung \n automation delayed: False",
+                "level": "warning",
+                "logger": "blueprints.panhans.heatingcontrol"
+              },
+              "target": {}
+            },
+            "running_script": false
+          }
+        }
+      ],
+      "action/2": [
+        {
+          "path": "action/2",
+          "timestamp": "2024-12-26T13:22:30.274529+00:00",
+          "changed_variables": {
+            "wait": {
+              "remaining": null,
+              "completed": true
+            }
+          },
+          "result": {
+            "wait": {
+              "remaining": null,
+              "completed": true
+            }
+          }
+        }
+      ],
+      "action/3": [
+        {
+          "path": "action/3",
+          "timestamp": "2024-12-26T13:22:30.275696+00:00",
+          "result": {
+            "choice": "default"
+          }
+        }
+      ],
+      "action/3/choose/0": [
+        {
+          "path": "action/3/choose/0",
+          "timestamp": "2024-12-26T13:22:30.275922+00:00",
+          "result": {
+            "result": false
+          }
+        }
+      ],
+      "action/3/choose/0/conditions/0": [
+        {
+          "path": "action/3/choose/0/conditions/0",
+          "timestamp": "2024-12-26T13:22:30.276080+00:00",
+          "result": {
+            "result": false,
+            "entities": []
+          }
+        }
+      ],
+      "action/3/default/0": [
+        {
+          "path": "action/3/default/0",
+          "timestamp": "2024-12-26T13:22:30.280941+00:00"
+        }
+      ],
+      "action/3/default/0/if": [
+        {
+          "path": "action/3/default/0/if",
+          "timestamp": "2024-12-26T13:22:30.281236+00:00",
+          "result": {
+            "result": false
+          }
+        }
+      ],
+      "action/3/default/0/if/condition/0": [
+        {
+          "path": "action/3/default/0/if/condition/0",
+          "timestamp": "2024-12-26T13:22:30.281415+00:00",
+          "result": {
+            "result": false,
+            "entities": []
+          }
+        }
+      ],
+      "action/3/default/1": [
+        {
+          "path": "action/3/default/1",
+          "timestamp": "2024-12-26T13:22:30.282171+00:00",
+          "result": {
+            "event": "ahc_event",
+            "event_data": {
+              "state": true,
+              "mode": "comfort",
+              "automation": "automation.arbeitszimmer_heizung",
+              "is_person_defined": false,
+              "is_anybody_home": false,
+              "is_proximity_defined": false,
+              "is_anybody_home_or_proximity": false,
+              "is_guest_mode": false,
+              "active_scheduler": "schedule.heizplan_arbeitszimmer",
+              "state_scheduler": true,
+              "state_presence_sensor": false,
+              "state_presence_scheduler": false,
+              "state_presence": false,
+              "state_proximity_arrived": false,
+              "state_proximity_way_home": false,
+              "is_force_max_temperature": false,
+              "is_force_eco_temperature": false,
+              "active_party_entity": null,
+              "party_temp": null,
+              "is_away": false,
+              "state_window": false,
+              "is_aggressive_mode": false,
+              "is_frost_protection": false,
+              "is_liming_protection": false,
+              "state_outside_temp": null,
+              "entry_time": "",
+              "hvac_mode": "heat",
+              "temperature_comfort": 22,
+              "temperature_eco": 19,
+              "target_temperature": 22,
+              "set_max_temperature": false,
+              "last_trigger_id": "temperature_change_window_off",
+              "calibration_trigger": false,
+              "change_trigger": false,
+              "warnings": false
+            }
+          }
+        }
+      ],
+      "action/3/default/2": [
+        {
+          "path": "action/3/default/2",
+          "timestamp": "2024-12-26T13:22:30.293473+00:00"
+        }
+      ],
+      "action/3/default/2/if": [
+        {
+          "path": "action/3/default/2/if",
+          "timestamp": "2024-12-26T13:22:30.293707+00:00",
+          "result": {
+            "result": false
+          }
+        }
+      ],
+      "action/3/default/2/if/condition/0": [
+        {
+          "path": "action/3/default/2/if/condition/0",
+          "timestamp": "2024-12-26T13:22:30.293873+00:00",
+          "result": {
+            "result": false,
+            "entities": []
+          }
+        }
+      ],
+      "action/3/default/3": [
+        {
+          "path": "action/3/default/3",
+          "timestamp": "2024-12-26T13:22:30.294672+00:00"
+        }
+      ],
+      "action/3/default/3/if": [
+        {
+          "path": "action/3/default/3/if",
+          "timestamp": "2024-12-26T13:22:30.294860+00:00",
+          "result": {
+            "result": false
+          }
+        }
+      ],
+      "action/3/default/3/if/condition/0": [
+        {
+          "path": "action/3/default/3/if/condition/0",
+          "timestamp": "2024-12-26T13:22:30.295017+00:00",
+          "result": {
+            "result": false,
+            "entities": []
+          }
+        }
+      ],
+      "action/3/default/4": [
+        {
+          "path": "action/3/default/4",
+          "timestamp": "2024-12-26T13:22:30.295763+00:00"
+        }
+      ],
+      "action/3/default/4/if": [
+        {
+          "path": "action/3/default/4/if",
+          "timestamp": "2024-12-26T13:22:30.295948+00:00",
+          "result": {
+            "result": false
+          }
+        }
+      ],
+      "action/3/default/4/if/condition/0": [
+        {
+          "path": "action/3/default/4/if/condition/0",
+          "timestamp": "2024-12-26T13:22:30.296102+00:00",
+          "result": {
+            "result": false,
+            "entities": []
+          }
+        }
+      ],
+      "action/3/default/5": [
+        {
+          "path": "action/3/default/5",
+          "timestamp": "2024-12-26T13:22:30.296835+00:00"
+        }
+      ],
+      "action/3/default/5/if": [
+        {
+          "path": "action/3/default/5/if",
+          "timestamp": "2024-12-26T13:22:30.297016+00:00",
+          "result": {
+            "result": false
+          }
+        }
+      ],
+      "action/3/default/5/if/condition/0": [
+        {
+          "path": "action/3/default/5/if/condition/0",
+          "timestamp": "2024-12-26T13:22:30.297181+00:00",
+          "result": {
+            "result": false,
+            "entities": []
+          }
+        }
+      ],
+      "action/3/default/6": [
+        {
+          "path": "action/3/default/6",
+          "timestamp": "2024-12-26T13:22:30.297894+00:00",
+          "changed_variables": {
+            "scene_to_apply_tmp": "scene.arbeitszimmer_heizung_window"
+          }
+        }
+      ],
+      "action/3/default/7": [
+        {
+          "path": "action/3/default/7",
+          "timestamp": "2024-12-26T13:22:30.299449+00:00",
+          "result": {
+            "choice": "then"
+          }
+        }
+      ],
+      "action/3/default/7/if": [
+        {
+          "path": "action/3/default/7/if",
+          "timestamp": "2024-12-26T13:22:30.299668+00:00",
+          "result": {
+            "result": true
+          }
+        }
+      ],
+      "action/3/default/7/if/condition/0": [
+        {
+          "path": "action/3/default/7/if/condition/0",
+          "timestamp": "2024-12-26T13:22:30.299822+00:00",
+          "result": {
+            "result": true,
+            "entities": []
+          }
+        }
+      ],
+      "action/3/default/7/if/condition/1": [
+        {
+          "path": "action/3/default/7/if/condition/1",
+          "timestamp": "2024-12-26T13:22:30.300430+00:00",
+          "result": {
+            "result": true,
+            "entities": [
+              "scene.arbeitszimmer_heizung_window"
+            ]
+          }
+        }
+      ],
+      "action/3/default/7/then/0": [
+        {
+          "path": "action/3/default/7/then/0",
+          "timestamp": "2024-12-26T13:22:30.301337+00:00",
+          "result": {
+            "params": {
+              "domain": "system_log",
+              "service": "write",
+              "service_data": {
+                "message": "AHC - Calibration - Arbeitszimmer Heizung \n apply scene: scene.arbeitszimmer_heizung_window state: <template TemplateState(<state scene.arbeitszimmer_heizung_window=2024-12-25T18:17:51.652979+00:00; entity_id=['climate.arbeitszimmer_heizung'], friendly_name=arbeitszimmer_heizung_window @ 2024-12-26T09:15:18.105214+01:00>)>",
+                "level": "warning",
+                "logger": "blueprints.panhans.heatingcontrol"
+              },
+              "target": {}
+            },
+            "running_script": false
+          }
+        }
+      ],
+      "action/3/default/7/then/1": [
+        {
+          "path": "action/3/default/7/then/1",
+          "timestamp": "2024-12-26T13:22:30.303078+00:00",
+          "result": {
+            "params": {
+              "domain": "scene",
+              "service": "turn_on",
+              "service_data": {},
+              "target": {
+                "entity_id": [
+                  "scene.arbeitszimmer_heizung_window"
+                ]
+              }
+            },
+            "running_script": false
+          }
+        }
+      ],
+      "action/3/default/7/then/2": [
+        {
+          "path": "action/3/default/7/then/2",
+          "timestamp": "2024-12-26T13:22:30.316896+00:00",
+          "result": {
+            "params": {
+              "domain": "scene",
+              "service": "delete",
+              "service_data": {},
+              "target": {
+                "entity_id": [
+                  "scene.arbeitszimmer_heizung_window"
+                ]
+              }
+            },
+            "running_script": false
+          }
+        }
+      ],
+      "action/3/default/7/then/3": [
+        {
+          "path": "action/3/default/7/then/3",
+          "timestamp": "2024-12-26T13:22:30.319220+00:00",
+          "result": {
+            "result": false,
+            "entities": []
+          }
+        }
+      ],
+      "action/3/default/8": [
+        {
+          "path": "action/3/default/8",
+          "timestamp": "2024-12-26T13:22:30.322774+00:00"
+        }
+      ],
+      "action/3/default/8/if": [
+        {
+          "path": "action/3/default/8/if",
+          "timestamp": "2024-12-26T13:22:30.322920+00:00",
+          "result": {
+            "result": false
+          }
+        }
+      ],
+      "action/3/default/8/if/condition/0": [
+        {
+          "path": "action/3/default/8/if/condition/0",
+          "timestamp": "2024-12-26T13:22:30.323011+00:00",
+          "result": {
+            "result": false,
+            "entities": []
+          }
+        }
+      ]
+    },
+    "config": {
+      "trigger_variables": {
+        "input_trvs": [
+          "climate.arbeitszimmer_heizung"
+        ],
+        "input_temperature_sensor": "sensor.arbeitszimmer_temperatur_temperature",
+        "is_temperature_sensor_defined": "{{ input_temperature_sensor != [] }}",
+        "input_persons": [],
+        "input_mode_guest": null,
+        "input_people_entering_home_duration": {
+          "hours": 0,
+          "minutes": 0,
+          "seconds": 2
+        },
+        "input_people_leaving_home_duration": {
+          "hours": 0,
+          "minutes": 0,
+          "seconds": 2
+        },
+        "input_person_count": "{{ input_persons | count }}",
+        "is_person_defined": "{{ input_person_count > 0 }}",
+        "is_guest_mode_defined": "{{ input_mode_guest != none }}",
+        "input_schedulers": [
+          "schedule.heizplan_arbeitszimmer"
+        ],
+        "input_scheduler_selector": null,
+        "input_scheduler_presence": null,
+        "is_scheduler_presence_defined": "{{ input_scheduler_presence != none }}",
+        "input_temperature_comfort": "input_number.temperatur_arbeitszimmer",
+        "input_temperature_eco": [],
+        "input_hvac_mode": "heat",
+        "factor": "{{ iif(input_hvac_mode == 'cool', -1, 1) | int }}",
+        "is_heat_only_if_below_real_temp": true,
+        "input_mode_winter": "input_boolean.winter_modus",
+        "input_mode_outside_temperature": null,
+        "input_mode_outside_temperature_threshold": 15,
+        "input_mode_room_temperature_threshold": 18,
+        "input_mode_room_temperature": false,
+        "input_invert_winter_mode_value": false,
+        "input_mode_party": [],
+        "input_adjustments": "[]",
+        "input_calibration_timeout": {
+          "hours": 0,
+          "minutes": 1,
+          "seconds": 0
+        },
+        "input_windows": [
+          "binary_sensor.arbeitszimmer_kontakt_fenster_rechts_contact"
+        ],
+        "input_presence_sensor": null,
+        "is_presence_sensor_defined": "{{ input_presence_sensor != none }}",
+        "input_presence_reaction_on_time": {
+          "hours": 0,
+          "minutes": 5,
+          "seconds": 0
+        },
+        "input_presence_reaction_off_time": {
+          "hours": 0,
+          "minutes": 5,
+          "seconds": 0
+        },
+        "input_proximity": null,
+        "input_proximity_duration": {
+          "hours": 0,
+          "minutes": 2,
+          "seconds": 0
+        },
+        "input_proximity_distance": 500,
+        "input_frost_protection_duration": {
+          "days": 0,
+          "hours": 0,
+          "minutes": 0,
+          "seconds": 0
+        },
+        "input_liming_protection": false,
+        "input_liming_protection_day": "Mon",
+        "input_liming_protection_time": "12:00:00",
+        "input_liming_in_winter": false
+      },
+      "variables": {
+        "input_trvs": [
+          "climate.arbeitszimmer_heizung"
+        ],
+        "input_hvac_mode": "heat",
+        "input_temperature_sensor": "sensor.arbeitszimmer_temperatur_temperature",
+        "input_temperature_comfort": "input_number.temperatur_arbeitszimmer",
+        "input_temperature_comfort_entity": "{{ iif(input_temperature_comfort == [], none, input_temperature_comfort) }}",
+        "input_temperature_comfort_static": 22,
+        "input_temperature_eco": [],
+        "input_temperature_eco_entity": "{{ iif(input_temperature_eco == [], none, input_temperature_eco) }}",
+        "input_temperature_eco_static": 19,
+        "input_frost_protection_temp": 5,
+        "input_frost_protection_duration": {
+          "days": 0,
+          "hours": 0,
+          "minutes": 0,
+          "seconds": 0
+        },
+        "input_liming_protection": false,
+        "input_liming_protection_day": "Mon",
+        "input_liming_protection_time": "12:00:00",
+        "input_liming_in_winter": false,
+        "input_schedulers": [
+          "schedule.heizplan_arbeitszimmer"
+        ],
+        "input_scheduler_selector": null,
+        "input_presence_sensor": null,
+        "input_scheduler_presence": null,
+        "input_presence_reaction_off_time": {
+          "hours": 0,
+          "minutes": 5,
+          "seconds": 0
+        },
+        "input_presence_reaction_on_time": {
+          "hours": 0,
+          "minutes": 5,
+          "seconds": 0
+        },
+        "input_windows": [
+          "binary_sensor.arbeitszimmer_kontakt_fenster_rechts_contact"
+        ],
+        "input_windows_reaction_time_open": {
+          "hours": 0,
+          "minutes": 0,
+          "seconds": 30
+        },
+        "input_windows_reaction_time_close": {
+          "hours": 0,
+          "minutes": 0,
+          "seconds": 30
+        },
+        "input_window_open_temperature": 0,
+        "input_party_legacy_restore": false,
+        "input_window_legacy_restore": false,
+        "is_legacy_restore": "{{ input_party_legacy_restore or input_window_legacy_restore }}",
+        "input_mode_winter": "input_boolean.winter_modus",
+        "input_invert_winter_mode_value": false,
+        "input_mode_outside_temperature": null,
+        "input_mode_outside_temperature_threshold": 15,
+        "input_mode_room_temperature": false,
+        "input_mode_room_temperature_threshold": 18,
+        "input_proximity": null,
+        "input_persons": [],
+        "input_mode_guest": null,
+        "input_people_entering_home_duration": {
+          "hours": 0,
+          "minutes": 0,
+          "seconds": 2
+        },
+        "input_people_leaving_home_duration": {
+          "hours": 0,
+          "minutes": 0,
+          "seconds": 2
+        },
+        "input_mode_party": [],
+        "input_force_max_temperature": "input_boolean.heizung_max_uberall",
+        "input_force_eco_temperature": [],
+        "input_calibration_delta": 0.5,
+        "input_calibration_generic": false,
+        "input_calibration_step_size": "auto",
+        "input_calibration_key_word": "calibration",
+        "input_generic_calibration_offset": 5,
+        "input_aggressive_mode_offset": 0,
+        "input_aggressive_mode_range": 0,
+        "input_aggressive_mode_calibration": false,
+        "input_away_offset": 0,
+        "is_scheduler_away_mode": false,
+        "is_presence_away_mode": false,
+        "presence_ignor_people": false,
+        "input_adjustments": "[]",
+        "is_reset_temperature": false,
+        "is_off_instead_min": true,
+        "is_not_off_but_min": false,
+        "is_fahrenheit": false,
+        "is_heat_only_if_below_real_temp": true,
+        "is_physical_change_enabled": false,
+        "input_action_call_delay": {
+          "hours": 0,
+          "minutes": 0,
+          "seconds": 2
+        },
+        "input_custom_action": null,
+        "input_startup_delay": {
+          "hours": 0,
+          "minutes": 2,
+          "seconds": 0
+        },
+        "input_fully_open_difference": 1,
+        "input_valve_opening_keyword": "valve_opening_degree",
+        "input_valve_positioning_step_size": "10",
+        "input_valve_positioning_mode": "off",
+        "input_valve_positioning_timeout": {
+          "hours": 0,
+          "minutes": 20,
+          "seconds": 0
+        },
+        "is_temperature_sensor_defined": "{{ input_temperature_sensor != [] }}",
+        "invalid_states": "{{ ['unknown', 'unavailable'] }}\n",
+        "value_temperature_sensor": "{% if is_temperature_sensor_defined %}\n  {{ states(input_temperature_sensor) }}\n{% else %}\n  {{ 'unknown' }}\n{% endif %}\n",
+        "valid_temperature_sensor": "{{ value_temperature_sensor not in invalid_states }}\n",
+        "factor": "{{ iif(input_hvac_mode == 'cool', -1, 1) | int }}",
+        "current_time_stamp": "{{ now() }}",
+        "is_metric": "{{ not is_temperature_sensor_defined or (is_temperature_sensor_defined and state_attr(input_temperature_sensor,VAR_UNIT_OF_MEASUREMENT) == '°C') }}",
+        "up_time_sensor": "{{ integration_entities('uptime') | first | default(none) }}",
+        "is_uptime_defined": "{{ up_time_sensor != none }}",
+        "uptime": "{% if is_uptime_defined %}\n  {{ states(up_time_sensor) | as_datetime }}\n{% else %}\n  {{ current_time_stamp | as_datetime }}\n{% endif %}\n",
+        "startup_delay": "{% set start_delay_seconds = timedelta(**input_startup_delay).total_seconds() %}\n{% if not is_uptime_defined or start_delay_seconds == 0 %}\n  {{ none }}\n{% else %}\n  {% set difference =  (current_time_stamp | as_datetime - uptime | as_datetime).total_seconds() %}\n  {% set real_start_delay = (start_delay_seconds - difference) %}\n\n  {{ iif(real_start_delay > 0, real_start_delay, none) }}\n{% endif %}\n",
+        "state_outside_temp": "{% if input_mode_outside_temperature == none %}\n  {{ none }}\n{% else %}\n  {% set outside_state = false %}\n  {% set use_room_temp = input_mode_room_temperature and valid_temperature_sensor %}\n  {% set room_state = iif(use_room_temp, false, true) %}\n\n  {% set state = states(input_mode_outside_temperature) %}\n  {% set state = iif(is_number(state) == true, state, state_attr(input_mode_outside_temperature,'temperature'))%}\n\n  {% if is_number(state) %}\n    {% set outside_state = (state | float - input_mode_outside_temperature_threshold | float) * factor < 0 %}\n  {% endif %}\n\n  {% if use_room_temp %}\n    {% set state = states(input_temperature_sensor) %}\n\n    {% if is_number(state) %}\n      {% set room_state = (state | float - input_mode_room_temperature_threshold | float) * factor < 0 %}\n    {% endif %}\n  {% endif %}\n\n  {{ room_state and outside_state }}\n{% endif %}\n",
+        "state_ahc": "{% set result = true %} {% if input_mode_winter != none %}\n  {% set activation_state = iif(input_invert_winter_mode_value, 'off', 'on') %}\n  {% set result = is_state(input_mode_winter, activation_state) %}\n{% endif %}\n{{ iif(state_outside_temp == none, result, result and state_outside_temp) }}\n",
+        "is_proximity_defined": "{{ input_proximity != none }}",
+        "state_proximity_arrived": "{% set proximity_entities = device_entities(input_proximity) %} {% set is_arrived = proximity_entities  \n    | select('is_state','arrived') \n    | expand \n    | selectattr('attributes.device_class', 'eq', 'enum') \n    | list | count > 0 %}\n{{ is_arrived }}\n",
+        "state_proximity_way_home": "{% set proximity_entities = device_entities(input_proximity) %}\n{% set earliest_timestamp = current_time_stamp | as_datetime - timedelta(**input_proximity_duration) %} {% set uptime_duration = as_datetime(uptime) + timedelta(**input_proximity_duration) %}\n{% if uptime_duration > earliest_timestamp %}\n  {% set earliest_timestamp = uptime_duration%}\n{% endif %}\n{% set entities_towards = proximity_entities  \n    | expand \n    | selectattr('attributes.device_class', 'eq', 'enum') \n    | selectattr('last_changed', '<=', earliest_timestamp)\n    | map(attribute='entity_id') | select('is_state','towards')\n    | map('regex_replace','_(?=[^_]*$)(.*)', '')\n    | list %}\n\n{% set distances = proximity_entities  \n    | expand \n    | selectattr('attributes.device_class', 'eq', 'distance')\n    | map(attribute='state')\n    | reject('eq', 'unknown')\n    | map('int')\n    | select('<=', input_proximity_distance | int)\n    | map('string')\n    | list %}\n\n{% set entities_distances = proximity_entities  \n    | expand \n    | selectattr('attributes.device_class', 'eq', 'distance')\n    | selectattr('state', 'in', distances)\n    | map(attribute='entity_id')\n    | map('regex_replace','_(?=[^_]*$)(.*)', '')\n    | list %}\n\n{% set towards_and_in_distance = entities_towards | select('in', entities_distances) | list | count > 0 %}\n{{ towards_and_in_distance }}\n",
+        "is_person_defined": "{{ input_persons | count > 0 or input_mode_guest != none }}",
+        "is_guest_mode": "{{ input_mode_guest != none and is_state(input_mode_guest, 'on') }}",
+        "is_anybody_home": "{% if is_guest_mode %}\n  {{ true }}\n{% elif not is_person_defined %}\n  {{ false }}\n{% else %}\n  {% set on_time_delta = current_time_stamp | as_datetime - timedelta(**input_people_entering_home_duration) %}\n  {% set off_time_delta = current_time_stamp | as_datetime - timedelta(**input_people_leaving_home_duration) %}\n\n  {% set uptime_on = as_datetime(uptime) + timedelta(**input_people_entering_home_duration) %}\n  {% set uptime_off = as_datetime(uptime) + timedelta(**input_people_leaving_home_duration) %}\n\n  {% set result = false %}\n\n  {% if uptime_on > on_time_delta or uptime_off > off_time_delta %}\n    {{ input_persons  | expand \n                      | selectattr('state', 'eq', 'home') \n                      | list \n                      | count > 0 }}\n  {% else %}\n    {% set somebody_is_home = input_persons | expand\n                                        | selectattr('state', 'eq', 'home')\n                                        | selectattr('last_changed', '<=', on_time_delta)\n                                        | list\n                                        | count > 0 %}\n\n    {% set somebody_is_leaving = input_persons | expand \n                                            | rejectattr('state', 'eq', 'home')\n                                            | selectattr('last_changed', '>', off_time_delta) \n                                            | list\n                                            | count > 0 %}\n\n    {{ somebody_is_home or somebody_is_leaving }}\n  {% endif %}\n{% endif %}\n",
+        "is_anybody_home_or_proximity": "{{ is_anybody_home or state_proximity_way_home or state_proximity_arrived}}",
+        "active_scheduler": "{% set selected_scheduler = none %} {% set schedules_count = input_schedulers | count %}\n{% if schedules_count == 0 %}\n  {% set selected_scheduler = none %}\n{% elif schedules_count == 1 or input_scheduler_selector == none %}\n  {% set selected_scheduler = input_schedulers | first %}\n{% elif schedules_count > 1 %}\n  {% set selector_value = states(input_scheduler_selector) %}\n\n  {% if is_number(selector_value) %}\n    {% set selector_value = iif(selector_value | int > schedules_count, schedules_count, selector_value) %}\n    {% set selector_value = iif(selector_value | int <= 0, 1, selector_value) %}\n    {% set selected_scheduler = input_schedulers[selector_value | int - 1] %}\n  {% elif selector_value in ['on','off'] %}\n    {% set selected_scheduler = iif(selector_value == 'off', input_schedulers[0], input_schedulers[1]) %}\n  {% else %}\n    {% set selected_scheduler = input_schedulers | expand | selectattr('attributes.friendly_name', 'eq', selector_value) | map(attribute='entity_id') | first | default(none) %}\n    {% if (selected_scheduler == none) %}\n      {% set selected_scheduler = input_schedulers | expand | selectattr('attributes.friendly_name', 'search', '(?i)' + selector_value) | map(attribute='entity_id') | first | default(none) %}\n    {% endif %}\n  {% endif %}\n{% endif %}\n{{ selected_scheduler }}\n",
+        "is_scheduler_defined": "{{ active_scheduler != none }}",
+        "state_scheduler": "{{ active_scheduler != none and is_state(active_scheduler,'on') }}",
+        "is_presence_sensor_defined": "{{ input_presence_sensor != none }}",
+        "is_presence_scheduler_defined": "{{ input_scheduler_presence != none }}",
+        "state_presence_scheduler": "{{ is_presence_scheduler_defined and is_state(input_scheduler_presence, 'on') }}",
+        "state_presence_sensor": "{% if not is_presence_sensor_defined %}\n  {{ false }}\n{% else %}\n  {% set last_changed = [input_presence_sensor] | expand | map(attribute='last_changed') | first %}\n  {% set sensor_state = is_state(input_presence_sensor, 'on') %}\n  {% set reaction_time = iif(sensor_state, input_presence_reaction_on_time, input_presence_reaction_off_time) %}\n  {% set min_timestamp = last_changed + timedelta(**reaction_time) %}\n  {% set current_ts = current_time_stamp | as_datetime%}\n\n  {% if is_uptime_defined and as_datetime(uptime) + timedelta(**reaction_time) > current_ts - timedelta(**reaction_time) %}\n    {{ sensor_state }}\n  {% else %}\n    {% set is_limit = min_timestamp <= current_ts %}\n\n    {{ (sensor_state == true and is_limit) or (sensor_state == false and not is_limit) }}\n  {% endif %}\n{% endif %}\n",
+        "state_presence": "{{ iif(is_presence_scheduler_defined, state_presence_scheduler and state_presence_sensor, state_presence_sensor) }}\n",
+        "is_force_max_temperature": "{{ input_force_max_temperature != [] and is_state(input_force_max_temperature, 'on') }}",
+        "is_force_eco_temperature": "{{ input_force_eco_temperature != [] and is_state(input_force_eco_temperature, 'on') }}",
+        "active_party_entity": "{{ input_mode_party | expand | selectattr('state', 'in', ['active','on']) | map(attribute='entity_id') | first | default(none) }}",
+        "state_party": "{{ active_party_entity != none }}",
+        "party_temp": "{% set pos_party_temp = none %} {% if state_party == true %}\n  {% set name = state_attr(active_party_entity,'friendly_name') %}\n  {% set pos_temp = name.split(' ') | last %}\n  {% if is_number(pos_temp) %}\n    {% set pos_party_temp = pos_temp | float %}\n  {% endif %}\n{% endif %} {{ pos_party_temp }}\n",
+        "is_away": "{% if is_person_defined and not is_anybody_home_or_proximity %}\n  {{ (is_scheduler_away_mode and state_scheduler) or (is_presence_away_mode and state_presence_scheduler and not state_presence) }}\n{% elif presence_ignor_people and is_presence_away_mode %}\n  {{ state_presence_scheduler and not state_presence }}\n{% elif is_presence_away_mode and is_person_defined and is_anybody_home_or_proximity and not presence_ignor_people %}\n  {{ not state_presence }}\n{% else %}\n  {{ false }}\n{% endif %}\n",
+        "state_window": "{% set current_ts = current_time_stamp | as_datetime %} {% set on_time_delta = current_ts - timedelta(**input_windows_reaction_time_open) %} {% set off_time_delta = current_ts - timedelta(**input_windows_reaction_time_close) %}\n{% set has_open_windows = input_windows \n    | expand\n    | selectattr('state', 'in', ['on','open','tilted'])\n    | selectattr('last_changed', '<=', on_time_delta)\n    | list\n    | count > 0 %}\n\n{% set closed_but_not_in_duration = input_windows \n    | expand\n    | selectattr('state', 'in', ['off','closed'])\n    | selectattr('last_changed', '>=', off_time_delta)\n    | list\n    | count > 0 %}\n\n{{ has_open_windows or closed_but_not_in_duration }}\n",
+        "is_aggressive_mode": "{{ input_aggressive_mode_offset > 0 }}",
+        "is_aggressive_mode_calibration": "{{ is_aggressive_mode and input_aggressive_mode_calibration and valid_temperature_sensor }}",
+        "is_frost_protection": "{% set frost_protection_timestamp = as_datetime(current_time_stamp) - timedelta(**input_frost_protection_duration) %} {% if frost_protection_timestamp == as_datetime(current_time_stamp) %}\n  {{ false }}\n{% else %}\n  {% set relevant_entities = [input_presence_sensor] + [input_mode_guest] + input_persons %}\n  {% set relevant_entities_count = relevant_entities | reject('eq',none) | list | count %}\n\n  {% if relevant_entities_count > 0 %}\n\n    {% set presence_count = [input_presence_sensor] \n        | reject('eq',none)\n        | reject('is_state','on')\n        | expand \n        | selectattr('last_changed', '<=', frost_protection_timestamp)\n        | list | count %}\n\n    {% set persons_count = input_persons\n        | reject('eq',none)\n        | reject('is_state','home')\n        | expand\n        | selectattr('last_changed', '<=', frost_protection_timestamp)\n        | list | count %}\n\n    {% set guest_mode_count = [input_mode_guest] \n        | reject('eq',none)\n        | reject('is_state','on')\n        | expand \n        | selectattr('last_changed', '<=', frost_protection_timestamp)\n        | list | count %}\n\n    {{ presence_count + guest_mode_count + persons_count == relevant_entities_count }}\n  {% else %}\n    {{ false }}\n  {% endif %}\n{% endif %}\n",
+        "is_liming_protection": "{% if not input_liming_protection%}\n  {{ false }}\n{% else %}\n  {% set enable_liming = true %}\n  {% if input_mode_winter != none %}\n    {% set enable_liming = is_state(input_mode_winter,'on') or input_liming_in_winter %}\n  {% endif %}\n\n  {% set current_ts = current_time_stamp | as_datetime %}\n\n  {% set is_liming_day = input_liming_protection_day == current_ts.strftime('%a') %}\n  {% set is_liming_time = input_liming_protection_time[:-3] in current_ts.strftime('%H:%M') %}\n\n  {{ enable_liming and is_liming_day and is_liming_time }}\n{% endif %}\n",
+        "valves": "{{ input_trvs | expand\n    | selectattr('attributes.hvac_modes','search','(?i)'+input_hvac_mode) \n    | map(attribute='entity_id') \n    | list }}\n",
+        "valves_unsupported": "{{ input_trvs | reject('in',valves) | list }}\n",
+        "valves_off_mode": "{{ valves | expand | selectattr('attributes.hvac_modes','search','(?i)off') \n    | map(attribute='entity_id') \n    | list }}\n",
+        "valves_without_off_mode": "{{ valves | reject('in',valves_off_mode) | list }}\n",
+        "valves_tado": "{{ valves | select('is_device_attr', 'manufacturer', 'Tado') | list }}",
+        "valves_xiaomi_xiaomi": "{{ valves | select('is_device_attr', 'manufacturer', 'Xiaomi') | list }}",
+        "valves_xiaomi_aqara": "{{ valves | select('is_device_attr', 'manufacturer', 'Aqara') | list }}",
+        "valves_xiaomi": "{{ valves_xiaomi_xiaomi + valves_xiaomi_aqara }}",
+        "valves_danfoss": "{{ valves | select('is_device_attr', 'manufacturer', 'Danfoss') | list }}",
+        "valves_popp": "{{ valves | select('is_device_attr', 'manufacturer', 'Popp') | list }}",
+        "valves_hive": "{{ valves | select('is_device_attr', 'manufacturer', 'Hive') | list }}",
+        "valves_dph": "{{ valves_danfoss + valves_popp + valves_hive }}",
+        "valves_calibration_common": "{{ valves | reject('in', valves_tado + valves_dph + valves_xiaomi) | list }}",
+        "last_comfort_entity_change": "{{ [input_temperature_comfort_entity] | expand | map(attribute='last_changed') | list | first | default(none) }}",
+        "last_eco_entity_change": "{{ [input_temperature_eco_entity] | expand | map(attribute='last_changed') | list | first | default(none) }}",
+        "latest_entry_today": "{% set scheduler_name = none %} {% if active_scheduler != none %}\n  {% set scheduler_name = state_attr(active_scheduler,'friendly_name') %}\n{% endif %}\n{% set current_ts = current_time_stamp | as_datetime %}\n{% set current_day = current_ts.strftime('%a') %} {% set current_time = current_ts.strftime('%H:%M') %}\n{% set plan = input_adjustments | rejectattr('time', 'undefined') \n    | selectattr('time','<=', current_time| string)\n    | list  %}\n\n{% set selected_entries_days_and_schedule = plan | rejectattr('days','==',Undefined) | selectattr('days','search',current_day) \n                           | rejectattr('scheduler','==',Undefined) | selectattr('scheduler','in',[scheduler_name]) \n                           | list %}\n\n{% set selected_entries_days = plan | rejectattr('days','==',Undefined) | selectattr('days','search',current_day) \n                                    | selectattr('scheduler','in',[Undefined])\n                                    | list %}\n\n{% set selected_entries_schedule = plan | rejectattr('scheduler','==',Undefined) | selectattr('scheduler','in',[scheduler_name]) \n                                        | selectattr('days','in',[Undefined])\n                                        | list %}\n\n{% set selected_entries_time_only = plan | selectattr('days','in',[Undefined]) \n                              | selectattr('scheduler','in',[Undefined]) \n                              | list %}\n\n{% set selected_entries = selected_entries_days_and_schedule + selected_entries_days + selected_entries_schedule + selected_entries_time_only %}\n{% if selected_entries | count > 0%}\n  {{ selected_entries | sort(attribute='time', reverse = true) | first  }}\n{% else %}\n  {{ none }}\n{% endif %}\n",
+        "latest_entry_day_before": "{% set timestamp = as_datetime(current_time_stamp).replace(hour=23,minute=59) + timedelta(days=-1) %}\n{% set scheduler_name = none %} {% if active_scheduler != none %}\n  {% set scheduler_name = state_attr(active_scheduler,'friendly_name') %}\n{% endif %}\n{% set current_day = timestamp.strftime('%a') %} {% set current_time = timestamp.strftime('%H:%M') %}\n{% set plan = input_adjustments | rejectattr('time', 'undefined') \n    | selectattr('time','<=', current_time| string)\n    | list  %}\n\n{% set selected_entries_days_and_schedule = plan | rejectattr('days','==',Undefined) | selectattr('days','search',current_day) \n                           | rejectattr('scheduler','==',Undefined) | selectattr('scheduler','in',[scheduler_name]) \n                           | list %}\n\n{% set selected_entries_days = plan | rejectattr('days','==',Undefined) | selectattr('days','search',current_day) \n                                    | selectattr('scheduler','in',[Undefined])\n                                    | list %}\n\n{% set selected_entries_schedule = plan | rejectattr('scheduler','==',Undefined) | selectattr('scheduler','in',[scheduler_name]) \n                                        | selectattr('days','in',[Undefined])\n                                        | list %}\n\n{% set selected_entries_time_only = plan | selectattr('days','in',[Undefined]) \n                              | selectattr('scheduler','in',[Undefined]) \n                              | list %}\n\n{% set selected_entries = selected_entries_days_and_schedule + selected_entries_days + selected_entries_schedule + selected_entries_time_only %}\n{% if selected_entries | count > 0%}\n  {{ selected_entries | sort(attribute='time', reverse = true) | first  }}\n{% else %}\n  {{ none }}\n{% endif %}\n",
+        "entry": "{{ iif(latest_entry_today != none, latest_entry_today, latest_entry_day_before) }}",
+        "entry_time": "{% if entry != none  %}\n  {% set entry_hour = entry['time'].split(':')[0] | int %}\n  {% set entry_minute = entry['time'].split(':')[1] | int %}\n  {{ as_datetime(current_time_stamp).replace(hour=entry_hour, minute=entry_minute, second=0, microsecond=0) + timedelta(days=iif(latest_entry_today == none,-1,0))  }}\n{% endif %}\n",
+        "entry_comfort_temp": "{% if entry != none and 'comfort' in entry.keys() and (last_comfort_entity_change == none or as_datetime(entry_time) > as_datetime(last_comfort_entity_change)) %}\n  {% set entry_temp = entry['comfort']%}  \n  {% if is_number(entry_temp) %}\n    {{ entry_temp }}\n  {% elif states[entry_temp] != none %}\n    {{ states(entry_temp) }}\n  {% endif %}\n{% else %}\n  {{ none }}\n{% endif %}\n",
+        "entry_eco_temp": "{% if entry != none and 'eco' in entry.keys() and (last_eco_entity_change == none or as_datetime(entry_time) > as_datetime(last_eco_entity_change)) %}\n  {% set entry_temp = entry['eco']%}  \n  {% if is_number(entry_temp) %}\n    {{ entry_temp }}\n  {% elif states[entry_temp] != none %}\n    {{ states(entry_temp) }}\n  {% endif %}\n{% else %}\n  {{ none }}\n{% endif %}\n",
+        "entry_calibration": "{% if entry != none and 'calibration' in entry.keys() %}\n  {{ entry['calibration'] == 'on' }}\n{% else %}\n  {{ true }}\n{% endif %}\n",
+        "trigger_id_defined": "{{ trigger.id is defined }}",
+        "is_calibration_trigger": "{% if valves_dph | count > 0 and trigger_id_defined and trigger.id in ['calibration_popp_ping','calibration_popp_change'] %}\n  {{ true }}\n{% elif is_aggressive_mode_calibration and trigger_id_defined and 'aggressive_mode' in trigger.id %}\n  {{ true }}\n{% else %}\n  {{ trigger_id_defined and 'calibration' in trigger.id and not trigger.id == 'calibration_aggressive_mode_thermostat_temp_change' }}\n{% endif %}\n",
+        "is_generic_calibration_trigger": "{{ is_calibration_trigger and input_calibration_generic }}",
+        "is_generic_calibration": "{{ is_generic_calibration_trigger and entry_calibration and valid_temperature_sensor }}",
+        "is_aggressive_mode_trigger": "{{ is_aggressive_mode and trigger_id_defined and 'aggressive_mode' in trigger.id }}",
+        "is_change_trigger": "{{ trigger_id_defined and \n    'temperature_change' in trigger.id and \n    ('presence' in trigger.id or \n    'scheduler' in trigger.id or \n    'proximity' in trigger.id or \n    'person' in trigger.id or\n    '_ds' in trigger.id)\n    and not trigger.id == 'temperature_change_valve_target' }}\n",
+        "is_pysical_change": "{{  trigger_id_defined \n    and trigger.id == 'temperature_change_valve_target' \n    and is_physical_change_enabled\n    and not state_window }}\n",
+        "is_adjustment_trigger": "{{ trigger_id_defined and trigger.id == 'temperature_change_heating_adjustment' and (entry_comfort_temp != none or entry_eco_temp != none) }}",
+        "is_reset": "{{ (is_reset_temperature and is_change_trigger) or \n    is_pysical_change or is_adjustment_trigger }}\n",
+        "is_changes_trigger": "{% if state_window %}\n  {% if trigger_id_defined and 'temperature_change_window_on' in trigger.id %}\n    {{ true }}\n  {% elif trigger_id_defined and 'temperature_change_window_off' not in trigger.id %}\n    {{ false }}\n  {% endif %}\n{% elif trigger.platform == none %}\n  {{ true }}\n{% elif trigger_id_defined and trigger.id == 'temperature_change_valve_target' %}\n  {{ false }}\n{% elif is_heat_only_if_below_real_temp and trigger_id_defined and 'above_temp' in trigger.id %}\n  {{ true }}\n{% elif is_aggressive_mode_calibration and is_aggressive_mode_trigger %}\n  {{ false }}\n{% elif is_aggressive_mode_trigger %}\n  {{ true }}\n{% elif is_generic_calibration %}\n  {{ true }}\n{% else %}\n  {{ trigger_id_defined and 'temperature_change' in trigger.id}}\n{% endif %}\n",
+        "is_scene_create_trigger": "{{ trigger_id_defined and ((\"window_on\" in trigger.id and not state_party) or (\"party_on\" in trigger.id and not state_window)) }}\n",
+        "is_scene_apply_trigger": "{{ trigger_id_defined and (\"window_off\" in trigger.id or \"party_off\" in trigger.id) and not is_legacy_restore and not (state_window or state_party) }}\n",
+        "is_scene_destroy_trigger": "{{ (is_change_trigger or trigger.id == 'temperature_change_heating_adjustment') and (state_window or state_party) }}\n",
+        "scene_entities": "{{ valves }}",
+        "scene_window_id": "{{ 'scene.' + this.entity_id | replace('automation.','') | replace('.','_') + '_window' }}",
+        "scene_party_id": "{{ 'scene.' + this.entity_id | replace('automation.','') | replace('.','_') + '_party' }}",
+        "scenes_all": "{{ [scene_window_id, scene_party_id] }}",
+        "scene_to_apply": "{% if is_scene_apply_trigger and \"window_off\" in trigger.id %}\n  {{ scene_window_id }}\n{% elif is_scene_apply_trigger and \"party_off\" in trigger.id %}\n  {{ scene_party_id }}\n{% else %}\n  {{ none }}\n{% endif %}\n",
+        "scenes_to_destroy": "{% set scenes = [] %} {% if is_scene_destroy_trigger %}\n  {% set scenes = iif(state_window, scenes + [scene_window_id], scenes) %}\n  {% set scenes = iif(state_party, scenes + [scene_party_id], scenes) %}\n{% endif %} {{ scenes }}\n",
+        "scene_to_create": "{{ iif(is_scene_create_trigger and \"window_on\" in trigger.id, scene_window_id, scene_party_id) }}\n",
+        "set_comfort": "{% if state_party or is_force_max_temperature %}\n  {{ true }}\n{% elif is_force_eco_temperature %}\n  {{ false }}\n{% elif is_away %}\n  {{ true }}\n{% elif not is_scheduler_defined and not is_presence_sensor_defined %}\n  {{ is_anybody_home_or_proximity }}\n{% else %}\n  {% set comfort_state = state_scheduler or state_presence %}\n\n  {% if is_person_defined or is_proximity_defined %}\n    {{ is_anybody_home_or_proximity and comfort_state }}\n  {% else %}\n    {{ comfort_state }}\n  {% endif %}\n{% endif %}\n",
+        "set_max_temperature": "{{ is_force_max_temperature or is_liming_protection }}",
+        "mode": "{% if not state_ahc %}\n  {{ 'off' }}\n{% elif state_window and input_window_open_temperature | int == 0 and not set_max_temperature %}\n  {{ 'off' }}\n{% elif is_off_instead_min and not set_comfort %}\n  {{ 'off' }}\n{% else %}\n  {{ input_hvac_mode }}\n{% endif %}\n",
+        "temperature_comfort_of_entity": "{% if(input_temperature_comfort_entity != none) %}\n  {{ states(input_temperature_comfort_entity) | float }}\n{% else %}\n  {{ none }}\n{% endif %}\n",
+        "temperature_eco_of_entity": "{% if(input_temperature_eco_entity != none) %}\n  {{ states(input_temperature_eco_entity) | float }}\n{% else %}\n  {{ none }}\n{% endif %}\n",
+        "temperature_comfort": "{{ [entry_comfort_temp, temperature_comfort_of_entity, input_temperature_comfort_static] | reject('==', none) | first }}",
+        "temperature_away": "{{ temperature_comfort | float - input_away_offset }}",
+        "temperature_eco": "{{ [entry_eco_temp, temperature_eco_of_entity, input_temperature_eco_static] | reject('==', none) | first }}",
+        "target_temperature": "{% if state_window and input_window_open_temperature > 0 %}\n  {{ input_window_open_temperature }}\n{% elif state_party %}\n  {{ iif(party_temp != none, party_temp, temperature_comfort) }}\n{% elif is_frost_protection %}\n  {{ input_frost_protection_temp }}\n{% else %}\n  {{ iif(set_comfort, iif(is_away, temperature_away, temperature_comfort), temperature_eco) }}\n{% endif %}\n",
+        "changes": "{% set n = namespace(dict=[]) %}\n{% set original_mode = mode %}\n{% if not is_changes_trigger %}\n  {{ n.dict }}\n{% else %}\n  {% for valve in input_trvs %}\n\n    {% set current_valve_temp = state_attr(valve, 'current_temperature') | float(20) %}\n    {% set current_valve_target_temp = state_attr(valve, 'temperature') | float(temperature) %}\n    {% set current_valve_mode = states(valve) %}\n    {% set min_temp = state_attr(valve, 'min_temp') | float(5) %}\n    {% set max_temp = state_attr(valve, 'max_temp') | float(30) %}\n\n    {% set valve_temp = target_temperature %}\n\n    {% set dont_turn_off = \n          valve in valves_without_off_mode or \n          is_not_off_but_min or \n          (state_window and input_window_open_temperature > 0) or\n          set_max_temperature %}\n\n    {% set ref_temp = current_valve_temp %}\n    {% if valid_temperature_sensor %}\n      {% set ref_temp = value_temperature_sensor | float(current_valve_temp) %}\n    {% endif %}\n\n    {% if is_heat_only_if_below_real_temp and iif(factor == 1, target_temperature <= ref_temp, target_temperature >= ref_temp) %}\n      {% set mode = 'off' %}\n    {% endif %}\n\n    {% set valve_mode = iif(mode == 'off' and dont_turn_off, current_valve_mode, mode) %}\n\n    {% if mode != 'off' %}\n\n      {% if is_aggressive_mode and not is_aggressive_mode_calibration %}\n\n        {% set temp_diff = valve_temp - ref_temp %}\n\n        {% if temp_diff * factor < input_aggressive_mode_range * -1 %}\n          {% set valve_temp = valve_temp - input_aggressive_mode_offset * factor %}\n        {% elif temp_diff * factor > input_aggressive_mode_range %}\n          {% set valve_temp = valve_temp + input_aggressive_mode_offset * factor %}\n        {% endif %}\n\n      {% endif %}\n\n      {% if input_calibration_generic %}\n\n        {% if current_valve_temp != ref_temp %}\n          {% set offset = ref_temp - current_valve_temp %}\n\n          {% set offset = iif(offset > float(input_generic_calibration_offset), input_generic_calibration_offset, offset) %}\n          {% set offset = iif(offset < float(input_generic_calibration_offset) * -1, input_generic_calibration_offset * -1, offset) %}\n\n          {% set temp_with_offset = float(valve_temp) - float(offset) %}\n          {% set step = state_attr(valve, 'target_temp_step') | float(0.5) %}\n\n          {% set temp_with_offset = (temp_with_offset | float(0) / float(step)) | round(0) * float(step) %}\n\n          {% set valve_temp = iif(input_calibration_step_size == 'full', float(temp_with_offset) | round(), temp_with_offset | round(1)) %}\n\n        {% endif %}\n      {% endif %}\n\n    {% endif %}\n\n    {% if mode == 'off' and dont_turn_off %}\n      {% set valve_temp = min_temp %}\n    {% endif %}\n\n    {% set valve_temp = iif(set_max_temperature, max_temp, valve_temp) %}\n    {% set valve_temp = iif(valve_temp > max_temp, max_temp, valve_temp) %}\n    {% set valve_temp = iif(valve_temp < min_temp, min_temp, valve_temp) %}\n\n    {% if current_valve_mode != valve_mode or current_valve_target_temp != valve_temp %}\n      {% set n.dict = n.dict + [(valve, [{'mode': valve_mode , 'temp': valve_temp}])] %}\n    {% endif %}\n\n  {% endfor %}\n\n  {% set mode = original_mode %}\n\n  {{ dict.from_keys(n.dict) }}\n{% endif %}\n",
+        "positioning": "{% set n = namespace(dict=[]) %}\n{% if input_valve_positioning_mode == 'off' %}\n  {{ n.dict }}\n{% else %}\n  {% for valve in input_trvs %}\n\n    {% set current_temp = state_attr(valve, 'current_temperature') | float(none) %}\n    {% set target_temp = state_attr(valve, 'temperature') | float(none) %}\n\n    {% set open_valve_entity = device_entities(device_id(valve)) | expand \n        | selectattr('domain','in','number') \n        | selectattr('entity_id', 'search', input_valve_opening_keyword)\n        | map(attribute='entity_id') \n        | list | first | default(none) %}\n\n    {%  if open_valve_entity != none and current_temp != none and target_temp != none and\n        (is_force_max_temperature or ([open_valve_entity] | expand | map(attribute='last_changed') | first) + timedelta(**input_valve_positioning_timeout) <= now()) %}\n\n      {% set opening = 100 %}\n      {% set difference = target_temp - current_temp %}\n      {% set step_size = input_valve_positioning_step_size | int %}\n\n      {% if input_fully_open_difference > 0 and not is_force_max_temperature %}\n\n        {% set opening_regular = (100 / input_fully_open_difference) * difference %}\n        {% set opening_pessimistic = sqrt(((100 / input_fully_open_difference) * difference) | abs) * 10 %}\n        {% set opening_optimistic = ((100 / input_fully_open_difference) * difference)**2 / 100 %}\n\n        {% set opening = opening_regular %}\n        {% set opening = iif(input_valve_positioning_mode == 'pessimistic', opening_pessimistic, opening) %}\n        {% set opening = iif(input_valve_positioning_mode == 'optimistic', opening_optimistic, opening) %}\n\n        {% set opening = iif(difference >= input_fully_open_difference, 100, opening) %}\n        {% set opening = iif(difference < 0, 0, opening) %}\n        {% set opening = ((opening + step_size / 2) // step_size * step_size) | int %}\n      {% endif %}\n\n      {% set open_valve_entity_value = states(open_valve_entity) | int %}\n\n      {% if open_valve_entity_value != opening %}\n        {% set n.dict = n.dict + [(valve, [{'entity': open_valve_entity , 'value': opening}])] %}\n      {% endif %}\n\n    {% endif %}\n  {% endfor %}\n\n  {{ dict.from_keys(n.dict) }}\n{% endif %}\n",
+        "reset_data": "{% set result = [] %} {% if is_adjustment_trigger %}\n  {% if entry_comfort_temp != none and input_temperature_comfort_entity != none %}\n    {% set result = result + [{'entity': input_temperature_comfort_entity, 'temp': entry_comfort_temp}] %}\n  {% endif %}\n  {% if entry_eco_temp != none and input_temperature_eco_entity != none %}\n    {% set result = result + [{'entity': input_temperature_eco_entity, 'temp': entry_eco_temp}] %}\n  {% endif %}\n{% else %}\n  {% set entity = none %}\n  {% if is_reset and set_comfort %}\n    {% set entity = iif(is_pysical_change, input_temperature_comfort_entity, input_temperature_eco_entity) %}\n  {% elif is_reset and not set_comfort %}\n    {% set entity = iif(is_pysical_change, input_temperature_eco_entity, input_temperature_comfort_entity) %}\n  {% endif %}\n\n  {% set temp_r = none %}\n  {% if is_pysical_change %}\n    {% set temp_r = state_attr(trigger.to_state.entity_id,'temperature') %}\n  {% else %}\n  {% set temp_r = iif(is_reset and entity == input_temperature_eco_entity, \n      input_temperature_eco_static, input_temperature_comfort_static) %}\n  {% endif %}\n\n  {% if entity != none and temp_r != none %}\n    {% set result = result + [{'entity': entity, 'temp': temp_r}] %}\n  {% endif %}\n{% endif %}\n{{ result }}\n",
+        "is_reset_trigger": "{{ is_reset and reset_data | count > 0 }}",
+        "is_native_calibration": "{{ not input_calibration_generic and entry_calibration and valid_temperature_sensor }}",
+        "is_native_calibration_trigger": "{{ is_calibration_trigger and is_native_calibration }}",
+        "rounding_mode": "{% if is_number(input_calibration_step_size) or input_calibration_step_size == 'full' %}\n  {{ 'manual' }}\n{% else %}\n  {{ 'auto' }}\n{% endif %}\n",
+        "calibration_tado": "{% set n = namespace(dict=[]) %}\n{% if is_native_calibration_trigger %}\n  {% for valve in valves_tado %}\n\n    {% set offset_old = state_attr(valve, 'offset_celsius') | float(0) %}\n    {% set local_temperature = state_attr(valve, 'current_temperature') | float %}\n    {% set calibration_sensor_temperature = value_temperature_sensor | float %}\n    \n    {% set offset_new = (-(local_temperature - calibration_sensor_temperature) + offset_old) %}\n\n    {% if is_aggressive_mode_calibration %}           \n      {% set temp_diff = state_attr(valve,'temperature') | float(target_temperature) - calibration_sensor_temperature %}\n\n      {% if temp_diff * factor < input_aggressive_mode_range * -1 %}\n        {% set offset_new = offset_new + input_aggressive_mode_offset * factor %}\n      {% elif temp_diff * factor > input_aggressive_mode_range %}\n        {% set offset_new = offset_new - input_aggressive_mode_offset * factor %}\n      {% endif %}\n    {% endif %}\n\n    {% set t_min = -10.9 %}\n    {% set t_max = 10.9 %}\n\n    {% set offset_new = iif(offset_new > t_max, t_max, offset_new) %}\n    {% set offset_new = iif(offset_new < t_min, t_min, offset_new) %}\n\n    {% set offset_new = offset_new | round(1) %}\n\n    {% if (float(offset_old) - float(offset_new)) | abs >= float(input_calibration_delta) %}\n      {% set n.dict = n.dict + [(valve, [{'value': offset_new }])] %}\n    {% endif %}\n\n  {% endfor %}\n{% endif %}\n{{ dict.from_keys(n.dict) }}\n",
+        "calibration_xiaomi": "{% set n = namespace(dict=[]) %}\n{% if is_native_calibration_trigger %}\n  {% for valve in valves_xiaomi %}\n\n    {% set calibration_entities = device_entities(device_id(valve)) |\n                                expand | selectattr('domain','in','number') |\n                                selectattr('entity_id', 'search', input_calibration_key_word) |\n                                map(attribute='entity_id') | list %}\n\n    {% if calibration_entities | count > 0 %}\n\n      {% set calibration_entity = calibration_entities | first %}\n      {% set offset_old = states(calibration_entity) | float(0) %}\n      {% set offset_new = value_temperature_sensor | float %}\n      \n      {% set step = state_attr(calibration_entity, 'step') | float(1) %}\n      {% if rounding_mode == 'manual' %} \n          {% set step = input_calibration_step_size | float(1) %}\n      {% endif %}\n\n      {% set min_val = state_attr(calibration_entity,'min') | float(0) %}\n      {% set max_val = state_attr(calibration_entity,'max') | float(55) %}\n      \n      {% if is_aggressive_mode_calibration %}           \n        {% set temp_diff = state_attr(valve,'temperature') | float(target_temperature) - value_temperature_sensor | float %}\n\n        {% if temp_diff * factor < input_aggressive_mode_range * -1 %}\n          {% set offset_new = offset_new + input_aggressive_mode_offset * factor %}\n        {% elif temp_diff * factor > input_aggressive_mode_range %}\n          {% set offset_new = offset_new - input_aggressive_mode_offset * factor %}\n        {% endif %}\n      {% endif %}\n\n      {% set round_size = iif('.' in (step | string), (step | string).split('.')[1] | length, 0) %}\n      {% set offset_new = ((offset_new | float(0) / step) | round(0) * step) | round(round_size) | float %}\n\n      {% set offset_new = iif(offset_new > max_val, max_val, offset_new) %}\n      {% set offset_new = iif(offset_new < min_val, min_val, offset_new) %}\n\n      {% if (float(offset_old) - float(offset_new)) | abs >= float(input_calibration_delta) %}\n        {% set n.dict = n.dict + [(calibration_entity, [{'value': offset_new, 'valve': valve}])] %}\n      {% endif %}\n    {% endif %}\n\n  {% endfor %}\n{% endif %}\n{{ dict.from_keys(n.dict) }}\n",
+        "calibration_dph": "{% set n = namespace(dict=[]) %} {% if is_native_calibration_trigger %}\n\n  {% for valve in valves_dph %}\n\n    {% set calibration_entity = device_entities(device_id(valve)) |\n                                expand | selectattr('domain','in','number') |\n                                selectattr('entity_id', 'search', input_calibration_key_word) |\n                                map(attribute='entity_id') | first %}\n\n    {% set min_val = state_attr(calibration_entity,'min')%}\n    {% set max_val = state_attr(calibration_entity,'max')%}\n    \n    {% set step = state_attr(calibration_entity, 'step') | float(1) %}\n    {% if rounding_mode == 'manual' %} \n        {% set step = input_calibration_step_size | float(1) %}\n    {% endif %}\n\n    {% set current_temp = state_attr(valve,'current_temperature') | float(20) %}\n\n    {% set new_state = value_temperature_sensor | float(current_temp) %}\n    {% set old_state = states(calibration_entity) | float %}\n\n    {% if is_aggressive_mode_calibration %}           \n      {% set temp_diff = state_attr(valve,'temperature') | float(target_temperature) - value_temperature_sensor | float %}\n\n      {% if temp_diff * factor < input_aggressive_mode_range * -1 %}\n        {% set new_state = new_state + input_aggressive_mode_offset * factor %}\n      {% elif temp_diff * factor > input_aggressive_mode_range %}\n        {% set new_state = new_state - input_aggressive_mode_offset * factor %}\n      {% endif %}\n    {% endif %}\n\n    {% if step <= 1 and max_val | string | count < 4 %}\n      {% set round_size = iif('.' in (step | string), (step | string).split('.')[1] | length, 0) %}\n      {% set new_state = ((new_state | float(0) / step) | round(0) * step) | round(round_size) | float %}\n    {% else %}\n      {% set new_state = new_state * 100 | int %}\n      {% set old_state = old_state | int %}\n    {% endif %}\n\n    {% set update_calibration = old_state != new_state %}\n\n    {% if is_periodical_popp_calibration and not update_calibration %}\n      {% set last_updated = [calibration_entity] | expand | map(attribute='last_updated') | first %}\n      {% set update_calibration = as_datetime(current_time_stamp) - timedelta(minutes=20) >= last_updated %}\n    {% endif %}\n\n    {% if update_calibration %}\n      {% set n.dict = n.dict + [(calibration_entity, [{'value': new_state, 'valve': valve}])] %}\n    {% endif%}\n\n  {% endfor %}\n{% endif %}\n{{ dict.from_keys(n.dict) }}\n",
+        "calibration_common": "{% set n = namespace(dict=[]) %}\n{% if is_native_calibration_trigger %}\n\n  {% for valve in valves_calibration_common %}\n\n    {% set calibration_entities = device_entities(device_id(valve)) |\n                                expand | selectattr('domain','in','number') |\n                                selectattr('entity_id', 'search', input_calibration_key_word) |\n                                map(attribute='entity_id') | list %}\n\n    {% if calibration_entities | count > 0%}\n\n      {% set calibration_entity = calibration_entities | first %}\n      \n      {% set step = state_attr(calibration_entity, 'step') | float(1) %}\n      {% if rounding_mode == 'manual' %} \n          {% set step = input_calibration_step_size | float(1) %}\n      {% endif %}\n\n      {% set min_calibration_value = state_attr(calibration_entity,'min') | float %}\n      {% set max_calibration_value = state_attr(calibration_entity,'max') | float %}\n      {% set thermostat_temperature = state_attr(valve, 'current_temperature') | float %}\n      {% set offset_old = states(calibration_entity) | float(0) %}\n\n      {% set new_calibration_value = (-(thermostat_temperature - value_temperature_sensor) + offset_old) %}\n\n      {% if is_aggressive_mode_calibration %}           \n        {% set temp_diff = state_attr(valve,'temperature') | float(target_temperature) - value_temperature_sensor %}\n\n        {% if temp_diff * factor < input_aggressive_mode_range * -1 %}\n          {% set new_calibration_value = new_calibration_value + input_aggressive_mode_offset * factor %}\n        {% elif temp_diff * factor > input_aggressive_mode_range %}\n          {% set new_calibration_value = new_calibration_value - input_aggressive_mode_offset * factor %}\n        {% endif %}\n      {% endif %}\n\n      {% set new_calibration_value = iif(new_calibration_value > max_calibration_value, max_calibration_value, new_calibration_value) %}\n      {% set new_calibration_value = iif(new_calibration_value < min_calibration_value, min_calibration_value, new_calibration_value) %}\n\n      {% set round_size = iif('.' in (step | string), (step | string).split('.')[1] | length, 0) %}\n\n      {% set offset_new = ((new_calibration_value | float(0) / step) | round(0) * step) | round(round_size) | float %}\n\n      {% if (float(offset_old) - float(offset_new)) | abs >= float(input_calibration_delta) %}\n        {% set n.dict = n.dict + [(calibration_entity, [{'value': offset_new, 'valve': valve}])] %}\n      {% endif %}\n\n    {% endif %}\n\n  {% endfor %}\n{% endif %}\n{{ dict.from_keys(n.dict) }}\n",
+        "calibration_value_set": "{{ dict(dict(calibration_xiaomi, **calibration_dph),**calibration_common) }}",
+        "no_changes": "{{ \n  (input_persons | count == 0 and \n  input_mode_guest == none and \n  input_schedulers | count == 0 and \n  input_presence_sensor == none and \n  input_proximity == none) or\n  (is_temperature_sensor_defined and not valid_temperature_sensor)\n}}\n",
+        "scene_trigger": "{{ is_scene_create_trigger or is_scene_apply_trigger or is_scene_destroy_trigger }}",
+        "change_trigger": "{{ is_changes_trigger and not scene_trigger and changes | count > 0 and not no_changes}}",
+        "reset_trigger": "{{ is_reset_trigger and not no_changes }}",
+        "calibration_trigger": "{{ is_calibration_trigger and not input_calibration_generic and (calibration_value_set | count > 0 or calibration_tado | count > 0) }}",
+        "positioning_trigger": "{{ positioning | count > 0 }}",
+        "automation_name": "{{ state_attr(this.entity_id,'friendly_name') }}",
+        "warnings": "{% set messages = [] %} {% if not is_uptime_defined %}\n  {% set messages = messages + ['To make Advance Heating Control work properly just setup the uptime integration (https://www.home-assistant.io/integrations/uptime/)'] %}\n{% elif is_aggressive_mode and not input_aggressive_mode_calibration and is_physical_change_enabled %}\n  {% set messages = messages + ['Aggressive Mode in combination with physical change / sync feature is not recommended. Expect unwanted side effects.'] %}\n{% elif is_generic_calibration and is_physical_change_enabled %}\n  {% set messages = messages + ['Generic Calibration in combination with physical change / sync feature is not recommended. Expect unwanted side effects.'] %}\n{% elif valves_unsupported | count > 0 %}\n  {% set messages = messages + ['Unsupported climate entities: ' + valves_unsupported | join(',') | string ] %}\n{% elif is_temperature_sensor_defined and not valid_temperature_sensor %}\n  {% set messages = messages + ['The temperature sensor' + input_temperature_sensor + ' has an invalid state: ' + states(input_temperature_sensor) ] %}\n{% endif %}\n{{ messages }}\n",
+        "thermostat_temperatures": "{{ input_trvs | expand | map(attribute='attributes.current_temperature') | list }}\n"
+      },
+      "conditions": [
+        {
+          "condition": "or",
+          "conditions": [
+            {
+              "condition": "template",
+              "value_template": "{{ calibration_trigger }}"
+            },
+            {
+              "condition": "template",
+              "value_template": "{{ scene_trigger }}"
+            },
+            {
+              "condition": "template",
+              "value_template": "{{ change_trigger }}"
+            },
+            {
+              "condition": "template",
+              "value_template": "{{ reset_trigger }}"
+            },
+            {
+              "condition": "template",
+              "value_template": "{{ positioning_trigger }}"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "variables": {
+            "is_delayed": "{{ not (not is_uptime_defined or (now() | as_datetime - states(up_time_sensor) | as_datetime) > timedelta(**input_startup_delay)) }}"
+          }
+        },
+        {
+          "action": "system_log.write",
+          "data": {
+            "message": "{{ 'AHC - ' + automation_name | string  + ' \\n ' + 'automation delayed: ' + is_delayed | string }}\n",
+            "level": "warning",
+            "logger": "blueprints.panhans.heatingcontrol"
+          }
+        },
+        {
+          "wait_template": "{{ not is_uptime_defined or (now() | as_datetime - states(up_time_sensor) | as_datetime) > timedelta(**input_startup_delay) }}\n"
+        },
+        {
+          "choose": [
+            {
+              "conditions": "{{ is_delayed }}",
+              "sequence": [
+                {
+                  "event": "ahc_delay_event",
+                  "event_data": {
+                    "automation": "{{ this.entity_id }}"
+                  }
+                }
+              ]
+            }
+          ],
+          "default": [
+            {
+              "if": [
+                {
+                  "condition": "template",
+                  "value_template": "{{ warnings | count > 0 }}"
+                }
+              ],
+              "then": [
+                {
+                  "action": "system_log.write",
+                  "data": {
+                    "level": "warning",
+                    "logger": "blueprints.panhans.heatingcontrol",
+                    "message": "{{ 'AHC-Warnings - ' + automation_name + ':\\n' + warnings | join('\\n') }}\n"
+                  }
+                }
+              ]
+            },
+            {
+              "event": "ahc_event",
+              "event_data": {
+                "state": "{{ state_ahc }}",
+                "mode": "{{ iif(set_comfort == true, 'comfort', 'eco') }}",
+                "automation": "{{ this.entity_id }}",
+                "is_person_defined": "{{ is_person_defined }}",
+                "is_anybody_home": "{{ is_anybody_home }}",
+                "is_proximity_defined": "{{ is_proximity_defined }}",
+                "is_anybody_home_or_proximity": "{{ is_anybody_home_or_proximity }}",
+                "is_guest_mode": "{{ is_guest_mode }}",
+                "active_scheduler": "{{ active_scheduler }}",
+                "state_scheduler": "{{ state_scheduler }}",
+                "state_presence_sensor": "{{ state_presence_sensor }}",
+                "state_presence_scheduler": "{{ state_presence_scheduler }}",
+                "state_presence": "{{ state_presence }}",
+                "state_proximity_arrived": "{{ state_proximity_arrived }}",
+                "state_proximity_way_home": "{{ state_proximity_way_home }}",
+                "is_force_max_temperature": "{{ is_force_max_temperature }}",
+                "is_force_eco_temperature": "{{ is_force_eco_temperature }}",
+                "active_party_entity": "{{ active_party_entity }}",
+                "party_temp": "{{ party_temp }}",
+                "is_away": "{{ is_away }}",
+                "state_window": "{{ state_window }}",
+                "is_aggressive_mode": "{{ is_aggressive_mode }}",
+                "is_frost_protection": "{{ is_frost_protection }}",
+                "is_liming_protection": "{{ is_liming_protection }}",
+                "state_outside_temp": "{{ state_outside_temp }}",
+                "entry_time": "{{ entry_time }}",
+                "hvac_mode": "{{ mode }}",
+                "temperature_comfort": "{{ temperature_comfort }}",
+                "temperature_eco": "{{ temperature_eco }}",
+                "target_temperature": "{{ target_temperature }}",
+                "set_max_temperature": "{{ set_max_temperature }}",
+                "last_trigger_id": "{{ iif(trigger_id_defined, trigger.id, '') }}",
+                "calibration_trigger": "{{ is_generic_calibration_trigger or calibration_trigger }}",
+                "change_trigger": "{{ change_trigger }}",
+                "warnings": "{{ warnings | count > 0 }}"
+              }
+            },
+            {
+              "if": [
+                {
+                  "condition": "template",
+                  "value_template": "{{ calibration_trigger }}"
+                },
+                {
+                  "condition": "and",
+                  "conditions": null
+                }
+              ],
+              "then": [
+                {
+                  "action": "system_log.write",
+                  "data": {
+                    "message": "{{ 'AHC - Calibration - ' + automation_name | string  + ' \\n ' + 'calibration data set: ' + calibration_value_set | string }}\n",
+                    "level": "warning",
+                    "logger": "blueprints.panhans.heatingcontrol"
+                  }
+                },
+                {
+                  "repeat": {
+                    "count": "{{ calibration_value_set | count | int }}",
+                    "sequence": [
+                      {
+                        "variables": {
+                          "index": "{{ repeat.index-1 }}",
+                          "calibration_entity": "{{ (calibration_value_set.keys() | list) [index] }}",
+                          "thermostat": "{{ (((calibration_value_set.values() | list) [index]) | first) ['valve'] }}",
+                          "offset": "{{ (((calibration_value_set.values() | list) [index]) | first) ['value'] }}",
+                          "select_entity": "{{ device_entities(device_id(thermostat)) | expand | selectattr('domain','in','select') | selectattr('attributes.options', 'contains', 'external') | map(attribute='entity_id') | list | first | default(none) }}"
+                        }
+                      },
+                      {
+                        "action": "system_log.write",
+                        "data": {
+                          "message": "{{ 'AHC - Calibration - ' + automation_name | string  + ' \\n ' + 'calibration entity: ' + calibration_entity | string  + ' \\n ' + 'offset: ' + offset | string }}\n",
+                          "level": "warning",
+                          "logger": "blueprints.panhans.heatingcontrol"
+                        }
+                      },
+                      {
+                        "if": [
+                          {
+                            "condition": "template",
+                            "value_template": "{{ thermostat in valves_xiaomi }}"
+                          },
+                          {
+                            "condition": "template",
+                            "value_template": "{{ select_entity != none and not is_state(select_entity, 'external') }}"
+                          }
+                        ],
+                        "then": [
+                          {
+                            "action": "select.select_option",
+                            "target": {
+                              "entity_id": "{{ select_entity }}"
+                            },
+                            "data": {
+                              "option": "external"
+                            }
+                          },
+                          {
+                            "delay": {
+                              "hours": 0,
+                              "minutes": 0,
+                              "seconds": 2
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "action": "number.set_value",
+                        "data": {
+                          "value": "{{ float(offset) }}"
+                        },
+                        "target": {
+                          "entity_id": "{{ calibration_entity }}"
+                        }
+                      },
+                      {
+                        "delay": {
+                          "hours": 0,
+                          "minutes": 0,
+                          "seconds": 2
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "repeat": {
+                    "count": "{{ calibration_tado | count | int }}",
+                    "sequence": [
+                      {
+                        "variables": {
+                          "index": "{{ repeat.index-1 }}",
+                          "thermostat": "{{ (calibration_tado.keys() | list) [index] }}",
+                          "offset": "{{ (((calibration_tado.values() | list) [index]) | first) ['value'] }}"
+                        }
+                      },
+                      {
+                        "action": "{{ 'tado.set_climate_temperature_offset' }}",
+                        "data": {
+                          "offset": "{{ offset }}",
+                          "entity_id": "{{ thermostat }}"
+                        }
+                      },
+                      {
+                        "delay": {
+                          "hours": 0,
+                          "minutes": 0,
+                          "seconds": 2
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "if": [
+                {
+                  "condition": "template",
+                  "value_template": "{{ positioning_trigger }}"
+                }
+              ],
+              "then": [
+                {
+                  "repeat": {
+                    "count": "{{ positioning | count | int }}",
+                    "sequence": [
+                      {
+                        "variables": {
+                          "index": "{{ repeat.index-1 }}",
+                          "thermostat": "{{ (positioning.keys() | list) [index] }}",
+                          "positioning_value": "{{ (((positioning.values() | list) [index]) | first) ['value'] }}",
+                          "positioning_entity": "{{ (((positioning.values() | list) [index]) | first) ['entity'] }}"
+                        }
+                      },
+                      {
+                        "action": "system_log.write",
+                        "data": {
+                          "message": "{{ 'AHC - Positioning - ' + automation_name | string  + ' \\n ' + 'entity: ' + positioning_entity | string  + ' \\n ' + 'value: ' + positioning_value | string }}\n",
+                          "level": "warning",
+                          "logger": "blueprints.panhans.heatingcontrol"
+                        }
+                      },
+                      {
+                        "action": "number.set_value",
+                        "data": {
+                          "value": "{{ positioning_value | int }}"
+                        },
+                        "target": {
+                          "entity_id": "{{ positioning_entity }}"
+                        }
+                      },
+                      {
+                        "delay": {
+                          "hours": 0,
+                          "minutes": 0,
+                          "seconds": 2
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "if": [
+                {
+                  "condition": "template",
+                  "value_template": "{{ is_scene_create_trigger }}"
+                },
+                {
+                  "condition": "template",
+                  "value_template": "{{ states[scene_to_create] == none }}"
+                }
+              ],
+              "then": [
+                {
+                  "action": "scene.create",
+                  "data": {
+                    "snapshot_entities": "{{ scene_entities }}",
+                    "scene_id": "{{ scene_to_create.split('.')[1] }}"
+                  }
+                }
+              ]
+            },
+            {
+              "if": [
+                {
+                  "condition": "template",
+                  "value_template": "{{ is_scene_destroy_trigger }}"
+                },
+                {
+                  "condition": "template",
+                  "value_template": "{{ scenes_to_destroy | count > 0 }}"
+                }
+              ],
+              "then": [
+                {
+                  "repeat": {
+                    "count": "{{ scenes_to_destroy | count | int }}",
+                    "sequence": [
+                      {
+                        "variables": {
+                          "scene_to_destroy": "{{ scenes_to_destroy[repeat.index-1] }}"
+                        }
+                      },
+                      {
+                        "if": [
+                          {
+                            "condition": "template",
+                            "value_template": "{{ states[scene_to_destroy] != none }}"
+                          }
+                        ],
+                        "then": [
+                          {
+                            "action": "scene.delete",
+                            "target": {
+                              "entity_id": "{{ scene_to_destroy }}"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "variables": {
+                "scene_to_apply_tmp": "{% if scene_to_apply != none and states[scene_to_apply] != none %}\n  {{ scene_to_apply }}\n{% else %}\n  {{ scenes_all | expand | reject('==',none) | map(attribute=\"entity_id\") | list | first | default(none) }}\n{% endif %}\n"
+              }
+            },
+            {
+              "if": [
+                {
+                  "condition": "template",
+                  "value_template": "{{ is_scene_apply_trigger }}"
+                },
+                {
+                  "condition": "template",
+                  "value_template": "{{ scene_to_apply_tmp != none and states[scene_to_apply_tmp] != none }}"
+                }
+              ],
+              "then": [
+                {
+                  "action": "system_log.write",
+                  "data": {
+                    "message": "{{ 'AHC - Calibration - ' + automation_name | string + ' \\n ' + 'apply scene: ' + scene_to_apply_tmp | string + ' state: ' + states[scene_to_apply_tmp] | string }}\n",
+                    "level": "warning",
+                    "logger": "blueprints.panhans.heatingcontrol"
+                  }
+                },
+                {
+                  "action": "scene.turn_on",
+                  "target": {
+                    "entity_id": "{{ scene_to_apply_tmp }}"
+                  }
+                },
+                {
+                  "action": "scene.delete",
+                  "target": {
+                    "entity_id": "{{ scene_to_apply_tmp }}"
+                  }
+                },
+                {
+                  "condition": "template",
+                  "value_template": "{{ false }}"
+                }
+              ],
+              "else": [
+                {
+                  "if": [
+                    {
+                      "condition": "template",
+                      "value_template": "{{ is_reset_trigger }}"
+                    }
+                  ],
+                  "then": [
+                    {
+                      "repeat": {
+                        "count": "{{ reset_data | count | int }}",
+                        "sequence": [
+                          {
+                            "action": "system_log.write",
+                            "data": {
+                              "message": "{{ 'AHC - Calibration - ' + automation_name | string  + ' \\n ' + 'reset data: ' + reset_data | string }}\n",
+                              "level": "warning",
+                              "logger": "blueprints.panhans.heatingcontrol"
+                            }
+                          },
+                          {
+                            "variables": {
+                              "index": "{{ repeat.index-1 }}",
+                              "reset_entity": "{{ reset_data[index]['entity'] }}",
+                              "reset_temp": "{% set temp_r = reset_data[index]['temp'] %} {% set t_min = state_attr(reset_entity,'min') %} {% set t_max = state_attr(reset_entity,'max') %} {% set step = state_attr(reset_entity,'step') %}\n{% set temp_r = ((temp_r | float(0) / step) | round(0) * step) | float %} {% set temp_r = iif(temp_r > t_max, t_max, temp_r) %} {% set temp_r = iif(temp_r < t_min, t_min, temp_r) %} {{ temp_r }}\n"
+                            }
+                          },
+                          {
+                            "action": "input_number.set_value",
+                            "data": {
+                              "value": "{{ reset_temp }}"
+                            },
+                            "target": {
+                              "entity_id": "{{ reset_entity }}"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "if": [
+                    {
+                      "condition": "and",
+                      "conditions": null
+                    },
+                    {
+                      "condition": "template",
+                      "value_template": "{{ changes | count | int > 0 }}"
+                    }
+                  ],
+                  "then": [
+                    {
+                      "repeat": {
+                        "count": "{{ changes | count | int }}",
+                        "sequence": [
+                          {
+                            "variables": {
+                              "index": "{{ repeat.index-1 }}",
+                              "thermostat": "{{ (changes.keys() | list) [index] }}",
+                              "mode": "{{ (((changes.values() | list) [index]) | first) ['mode'] }}",
+                              "temp_target": "{{ (((changes.values() | list) [index]) | first) ['temp'] }}"
+                            }
+                          },
+                          {
+                            "action": "system_log.write",
+                            "data": {
+                              "message": "AHC - Change - {{ automation_name }} {{\" \\n \"}} Trigger ID: {{ iif(trigger_id_defined, trigger.id, '') }} Thermostat: {{ thermostat }} {{\" \\n \"}} Mode: {{ mode }} {{\" \\n \"}} New Target Temp: {{ temp_target }} {{\" \\n \"}} Current Target Temp: {{ state_attr(thermostat,'temperature') }}\n",
+                              "level": "warning",
+                              "logger": "blueprints.panhans.heatingcontrol"
+                            }
+                          },
+                          {
+                            "if": [
+                              {
+                                "condition": "template",
+                                "value_template": "{{ states(thermostat) | lower != mode | lower  }}"
+                              }
+                            ],
+                            "then": [
+                              {
+                                "action": "climate.set_hvac_mode",
+                                "data": {
+                                  "entity_id": "{{ thermostat }}",
+                                  "hvac_mode": "{{ mode }}"
+                                }
+                              },
+                              {
+                                "delay": {
+                                  "hours": 0,
+                                  "minutes": 0,
+                                  "seconds": 2
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "if": [
+                              {
+                                "condition": "template",
+                                "value_template": "{{ state_attr(thermostat, 'temperature') != temp_target and mode != 'off' }}"
+                              }
+                            ],
+                            "then": [
+                              {
+                                "action": "climate.set_temperature",
+                                "data": {
+                                  "entity_id": "{{ thermostat }}",
+                                  "temperature": "{{ temp_target | float }}"
+                                }
+                              },
+                              {
+                                "delay": {
+                                  "hours": 0,
+                                  "minutes": 0,
+                                  "seconds": 2
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "if": [
+                {
+                  "condition": "template",
+                  "value_template": "{{ input_custom_action != none }}"
+                }
+              ],
+              "then": null
+            }
+          ]
+        }
+      ],
+      "mode": "queued",
+      "triggers": [
+        {
+          "trigger": "homeassistant",
+          "event": "start",
+          "id": "temperature_change_hastart"
+        },
+        {
+          "trigger": "event",
+          "event_type": "automation_reloaded",
+          "id": "temperature_change_reload"
+        },
+        {
+          "trigger": "event",
+          "event_type": "ahc_delay_event",
+          "id": "delayed_call_temperature_change",
+          "event_data": {
+            "automation": "{{ this.entity_id }}"
+          }
+        },
+        {
+          "trigger": "state",
+          "entity_id": [
+            "climate.arbeitszimmer_heizung"
+          ],
+          "from": [
+            "unknown",
+            "unavailable"
+          ],
+          "for": {
+            "seconds": 5
+          },
+          "id": "temperature_change_available"
+        },
+        {
+          "trigger": "state",
+          "entity_id": [
+            "climate.arbeitszimmer_heizung"
+          ],
+          "attribute": "temperature",
+          "for": {
+            "seconds": 5
+          },
+          "id": "temperature_change_valve_target"
+        },
+        {
+          "trigger": "state",
+          "entity_id": [],
+          "for": {
+            "hours": 0,
+            "minutes": 0,
+            "seconds": 2
+          },
+          "id": "temperature_change_eco"
+        },
+        {
+          "trigger": "state",
+          "entity_id": "input_number.temperatur_arbeitszimmer",
+          "for": {
+            "hours": 0,
+            "minutes": 0,
+            "seconds": 2
+          },
+          "id": "temperature_change_comfort"
+        },
+        {
+          "trigger": "template",
+          "value_template": "{{ input_persons  | expand \n                  | selectattr('state', 'eq', 'home') \n                  | list \n                  | count > 0 \n                  \n  or (is_guest_mode_defined and states(input_mode_guest) in ['on','active'] ) }}\n",
+          "id": "temperature_change_person_on",
+          "for": {
+            "hours": 0,
+            "minutes": 0,
+            "seconds": 2
+          }
+        },
+        {
+          "trigger": "template",
+          "value_template": "{{ input_persons  | expand \n                  | selectattr('state', 'eq', 'home') \n                  | list \n                  | count == 0 \n  \n  and (not is_guest_mode_defined or (is_guest_mode_defined and states(input_mode_guest) not in ['on','active'])) }}\n",
+          "id": "temperature_change_person_off",
+          "for": {
+            "hours": 0,
+            "minutes": 0,
+            "seconds": 2
+          }
+        },
+        {
+          "trigger": "template",
+          "id": "temperature_change_scheduler_on",
+          "value_template": "{% set selected_scheduler = none %} {% set schedules_count = input_schedulers | count %}\n{% if schedules_count == 0 %}\n  {% set selected_scheduler = none %}\n{% elif schedules_count == 1 or input_scheduler_selector == none %}\n  {% set selected_scheduler = input_schedulers | first %}\n{% elif schedules_count > 1 %}\n  {% set selector_value = states(input_scheduler_selector) %}\n\n  {% if is_number(selector_value) %}\n    {% set selector_value = iif(selector_value | int > schedules_count, schedules_count, selector_value) %}\n    {% set selector_value = iif(selector_value | int <= 0, 1, selector_value) %}\n    {% set selected_scheduler = input_schedulers[selector_value | int - 1] %}\n  {% elif selector_value in ['on','off'] %}\n    {% set selected_scheduler = iif(selector_value == 'off', input_schedulers[0], input_schedulers[1]) %}\n  {% else %}\n    {% set selected_scheduler = input_schedulers | expand | selectattr('attributes.friendly_name', 'eq', selector_value) | map(attribute='entity_id') | first | default(none) %}\n    {% if (selected_scheduler == none) %}\n      {% set selected_scheduler = input_schedulers | expand | selectattr('attributes.friendly_name', 'search', '(?i)' + selector_value) | map(attribute='entity_id') | first | default(none) %}\n    {% endif %}\n  {% endif %}\n{% endif %}\n{% if selected_scheduler == none %}\n  {{ false }}\n{% else %}\n  {{ is_state(selected_scheduler, 'on') }}\n{% endif %}\n"
+        },
+        {
+          "trigger": "template",
+          "id": "temperature_change_scheduler_off",
+          "value_template": "{% set selected_scheduler = none %} {% set schedules_count = input_schedulers | count %}\n{% if schedules_count == 0 %}\n  {% set selected_scheduler = none %}\n{% elif schedules_count == 1 or input_scheduler_selector == none %}\n  {% set selected_scheduler = input_schedulers | first %}\n{% elif schedules_count > 1 %}\n  {% set selector_value = states(input_scheduler_selector) %}\n\n  {% if is_number(selector_value) %}\n    {% set selector_value = iif(selector_value | int > schedules_count, schedules_count, selector_value) %}\n    {% set selector_value = iif(selector_value | int <= 0, 1, selector_value) %}\n    {% set selected_scheduler = input_schedulers[selector_value | int - 1] %}\n  {% elif selector_value in ['on','off'] %}\n    {% set selected_scheduler = iif(selector_value == 'off', input_schedulers[0], input_schedulers[1]) %}\n  {% else %}\n    {% set selected_scheduler = input_schedulers | expand | selectattr('attributes.friendly_name', 'eq', selector_value) | map(attribute='entity_id') | first | default(none) %}\n    {% if (selected_scheduler == none) %}\n      {% set selected_scheduler = input_schedulers | expand | selectattr('attributes.friendly_name', 'search', '(?i)' + selector_value) | map(attribute='entity_id') | first | default(none) %}\n    {% endif %}\n  {% endif %}\n{% endif %}\n{% if selected_scheduler == none %}\n  {{ false }}\n{% else %}\n  {{ is_state(selected_scheduler, 'off') }}\n{% endif %}\n"
+        },
+        {
+          "trigger": "template",
+          "id": "temperature_change_presence_on",
+          "value_template": "{{ input_presence_sensor != none and is_state(input_presence_sensor, 'on') }}",
+          "for": {
+            "hours": 0,
+            "minutes": 5,
+            "seconds": 0
+          }
+        },
+        {
+          "trigger": "template",
+          "id": "temperature_change_presence_off",
+          "value_template": "{{ input_presence_sensor != none and is_state(input_presence_sensor, 'off') }}",
+          "for": {
+            "hours": 0,
+            "minutes": 5,
+            "seconds": 0
+          }
+        },
+        {
+          "trigger": "template",
+          "id": "temperature_change_presence_scheduler_on",
+          "value_template": "{{ input_scheduler_presence != none and is_state(input_scheduler_presence, 'on') }}",
+          "for": {
+            "hours": 0,
+            "minutes": 0,
+            "seconds": 2
+          }
+        },
+        {
+          "trigger": "template",
+          "id": "temperature_change_presence_scheduler_off",
+          "value_template": "{{ input_scheduler_presence != none and is_state(input_scheduler_presence, 'off') }}",
+          "for": {
+            "hours": 0,
+            "minutes": 0,
+            "seconds": 2
+          }
+        },
+        {
+          "trigger": "template",
+          "id": "temperature_change_person_proximity_on",
+          "value_template": "{% set proximity_entities = device_entities(input_proximity) %}\n{% set is_arrived = proximity_entities  \n    | select('is_state','arrived') \n    | expand \n    | selectattr('attributes.device_class', 'eq', 'enum')\n    | list | count > 0 %}\n\n{% set entities_towards = proximity_entities  \n    | expand \n    | selectattr('attributes.device_class', 'eq', 'enum') \n    | map(attribute='entity_id') | select('is_state','towards') \n    | map('regex_replace','_(?=[^_]*$)(.*)', '')\n    | list %}\n\n{% set distances = proximity_entities  \n  | expand \n  | selectattr('attributes.device_class', 'eq', 'distance')\n  | map(attribute='state')\n  | reject('eq', 'unknown')\n  | map('int')\n  | select('<=', input_proximity_distance | int)\n  | map('string')\n  | list %}\n\n{% set entities_distances = proximity_entities  \n    | expand \n    | selectattr('attributes.device_class', 'eq', 'distance')\n    | selectattr('state', 'in', distances)\n    | map(attribute='entity_id')\n    | map('regex_replace','_(?=[^_]*$)(.*)', '')\n    | list %}\n\n{% set entites_towards_and_in_distance = entities_towards | select('in', entities_distances) | list | count > 0 %}\n{{ entites_towards_and_in_distance or is_arrived }}\n",
+          "for": {
+            "hours": 0,
+            "minutes": 2,
+            "seconds": 0
+          }
+        },
+        {
+          "trigger": "template",
+          "id": "temperature_change_person_proximity_off",
+          "value_template": "{% set proximity_entities = device_entities(input_proximity) %} {% set is_arrived = proximity_entities  \n    | select('is_state','arrived') \n    | expand \n    | selectattr('attributes.device_class', 'eq', 'enum') \n    | list | count > 0 %}\n\n{% set entities_towards = proximity_entities  \n    | expand \n    | selectattr('attributes.device_class', 'eq', 'enum') \n    | map(attribute='entity_id') | select('is_state','towards') \n    | map('regex_replace','_(?=[^_]*$)(.*)', '')\n    | list %}\n\n{% set distances = proximity_entities  \n  | expand \n  | selectattr('attributes.device_class', 'eq', 'distance')\n  | map(attribute='state')\n  | reject('eq', 'unknown')\n  | map('int')\n  | select('<=', input_proximity_distance | int)\n  | map('string')\n  | list %}\n\n{% set entities_distances = proximity_entities  \n    | expand \n    | selectattr('attributes.device_class', 'eq', 'distance')\n    | selectattr('state', 'in', distances)\n    | map(attribute='entity_id')\n    | map('regex_replace','_(?=[^_]*$)(.*)', '')\n    | list %}\n\n{% set entites_towards_and_in_distance = entities_towards | select('in', entities_distances) | list | count > 0 %}\n{{ entites_towards_and_in_distance == false and is_arrived == false }}\n",
+          "for": {
+            "hours": 0,
+            "minutes": 2,
+            "seconds": 0
+          }
+        },
+        {
+          "trigger": "template",
+          "value_template": "{{ expand(input_windows) | selectattr('state', 'in', ['on','open','tilted']) | list | count > 0 }}",
+          "for": {
+            "hours": 0,
+            "minutes": 0,
+            "seconds": 30
+          },
+          "id": "temperature_change_window_on"
+        },
+        {
+          "trigger": "template",
+          "value_template": "{{ expand(input_windows) | selectattr('state', 'in', ['on','open','tilted']) | list | count == 0 }}",
+          "for": {
+            "hours": 0,
+            "minutes": 0,
+            "seconds": 30
+          },
+          "id": "temperature_change_window_off"
+        },
+        {
+          "trigger": "template",
+          "id": "temperature_change_winter_mode_on",
+          "value_template": "{% if input_mode_winter != none %}\n  {% set activation_state = iif(input_invert_winter_mode_value, 'off', 'on') %}\n  {{ is_state(input_mode_winter, activation_state) }}\n{% endif %}\n",
+          "for": {
+            "hours": 0,
+            "minutes": 0,
+            "seconds": 2
+          }
+        },
+        {
+          "trigger": "template",
+          "id": "temperature_change_winter_mode_off",
+          "value_template": "{% if input_mode_winter != none %}\n  {% set activation_state = iif(input_invert_winter_mode_value, 'off', 'on') %}\n  {{ not is_state(input_mode_winter, activation_state) }}\n{% endif %}\n",
+          "for": {
+            "hours": 0,
+            "minutes": 0,
+            "seconds": 2
+          }
+        },
+        {
+          "trigger": "template",
+          "id": "temperature_change_outside_on",
+          "value_template": "{% if input_mode_outside_temperature == none %}\n  {{ false }}\n{% else %}\n  {% set outside_state = false %}\n  {% set use_room_temp = input_mode_room_temperature and is_temperature_sensor_defined %}\n  {% set room_state = iif(use_room_temp, false, true) %}\n\n  {% set state = states(input_mode_outside_temperature) %}\n  {% set state = iif(is_number(state) == true, state, state_attr(input_mode_outside_temperature,'temperature'))%}\n\n  {% if is_number(state) %}\n    {% set outside_state = (state | float - input_mode_outside_temperature_threshold | float) * factor < 0 %}\n  {% endif %}\n\n  {% if use_room_temp %}\n    {% set state = states(input_temperature_sensor) %}\n\n    {% if is_number(state) %}\n      {% set room_state = (state | float - input_mode_room_temperature_threshold | float) * factor < 0 %}\n    {% endif %}\n  {% endif %}\n\n  {{ room_state and outside_state }}\n{% endif %}\n",
+          "for": {
+            "hours": 0,
+            "minutes": 0,
+            "seconds": 2
+          }
+        },
+        {
+          "trigger": "template",
+          "id": "temperature_change_outside_off",
+          "value_template": "{% if input_mode_outside_temperature == none %}\n  {{ false }}\n{% else %}\n  {% set outside_state = false %}\n  {% set use_room_temp = input_mode_room_temperature and is_temperature_sensor_defined %}\n  {% set room_state = iif(use_room_temp, false, true) %}\n\n  {% set state = states(input_mode_outside_temperature) %}\n  {% set state = iif(is_number(state) == true, state, state_attr(input_mode_outside_temperature,'temperature'))%}\n\n  {% if is_number(state) %}\n    {% set outside_state = (state | float - input_mode_outside_temperature_threshold | float) * factor < 0 %}\n  {% endif %}\n\n  {% if use_room_temp %}\n    {% set state = states(input_temperature_sensor) %}\n\n    {% if is_number(state) %}\n      {% set room_state = (state | float - input_mode_room_temperature_threshold | float) * factor < 0 %}\n    {% endif %}\n  {% endif %}\n\n  {{ not (room_state and outside_state) }}\n{% endif %}\n",
+          "for": {
+            "hours": 0,
+            "minutes": 0,
+            "seconds": 2
+          }
+        },
+        {
+          "trigger": "state",
+          "id": "temperature_change_force_max_temperature_on",
+          "entity_id": "input_boolean.heizung_max_uberall",
+          "for": {
+            "hours": 0,
+            "minutes": 0,
+            "seconds": 2
+          }
+        },
+        {
+          "trigger": "state",
+          "id": "temperature_change_force_eco_temperature_ds",
+          "entity_id": [],
+          "for": {
+            "hours": 0,
+            "minutes": 0,
+            "seconds": 2
+          }
+        },
+        {
+          "trigger": "template",
+          "id": "temperature_change_party_on",
+          "value_template": "{{ input_mode_party | expand | selectattr('state', 'in', ['active','on']) | list | count > 0 }}",
+          "for": {
+            "hours": 0,
+            "minutes": 0,
+            "seconds": 2
+          }
+        },
+        {
+          "trigger": "template",
+          "value_template": "{{ input_mode_party | expand | selectattr('state', 'in', ['active','on']) | list | count == 0 }}",
+          "id": "temperature_change_party_off",
+          "for": {
+            "hours": 0,
+            "minutes": 0,
+            "seconds": 2
+          }
+        },
+        {
+          "trigger": "state",
+          "id": "calibration_aggressive_mode_above_temp_thermostat_current_temp_change",
+          "entity_id": [
+            "climate.arbeitszimmer_heizung"
+          ],
+          "attribute": "current_temperature",
+          "for": {
+            "hours": 0,
+            "minutes": 1,
+            "seconds": 0
+          }
+        },
+        {
+          "trigger": "state",
+          "id": "calibration_aggressive_mode_thermostat_temp_change",
+          "entity_id": [
+            "climate.arbeitszimmer_heizung"
+          ],
+          "attribute": "temperature",
+          "for": {
+            "seconds": 30
+          }
+        },
+        {
+          "trigger": "state",
+          "id": "aggressive_mode_above_temp_sensor_change",
+          "entity_id": "sensor.arbeitszimmer_temperatur_temperature",
+          "for": {
+            "seconds": 30
+          }
+        },
+        {
+          "trigger": "state",
+          "id": "calibration_sensor_change",
+          "entity_id": "sensor.arbeitszimmer_temperatur_temperature",
+          "for": {
+            "hours": 0,
+            "minutes": 1,
+            "seconds": 0
+          }
+        },
+        {
+          "trigger": "state",
+          "id": "calibration_popp_change",
+          "entity_id": "sensor.arbeitszimmer_temperatur_temperature",
+          "for": {
+            "seconds": 2
+          }
+        },
+        {
+          "trigger": "template",
+          "id": "calibration_popp_ping",
+          "value_template": "{% set has_valves_danfoss = input_trvs | select('is_device_attr', 'manufacturer', 'Danfoss') | list  %} {% set has_valves_popp = input_trvs | select('is_device_attr', 'manufacturer', 'Popp') | list %} {% set valves_hive = input_trvs | select('is_device_attr', 'manufacturer', 'Hive') | list %}\n{% set has_valves = (has_valves_danfoss + has_valves_popp + valves_hive) | count > 0 %}\n{{ has_valves and is_temperature_sensor_defined and now().strftime('%M') | int % 10 == 0 }}\n"
+        },
+        {
+          "trigger": "template",
+          "id": "temperature_change_heating_adjustment",
+          "value_template": "{% set timestamp = now() %}\n{% set current_day = timestamp.strftime('%a') %} {% set current_time = timestamp.strftime('%H:%M') %}\n{% set plan = input_adjustments | rejectattr('time', 'undefined') \n    | selectattr('time','eq', current_time | string)\n    | sort(attribute='time', reverse = true)\n    | list  %}\n\n{{ plan | count > 0 and now() < now().replace(second=2) }}\n"
+        },
+        {
+          "trigger": "template",
+          "value_template": "{% if not input_liming_protection%}\n  {{ false }}\n{% else %}\n  {% set enable_liming = true %}\n  {% if input_mode_winter != none %}\n    {% set enable_liming = is_state(input_mode_winter,'on') or input_liming_in_winter %}\n  {% endif %}\n\n  {% set is_liming_day = input_liming_protection_day == now().strftime('%a') %}\n  {% set is_liming_time = input_liming_protection_time[:-3] in now().strftime('%H:%M') %}\n\n  {{ enable_liming and is_liming_day and is_liming_time }}\n{% endif %}\n",
+          "id": "temperature_change_liming_protection_on"
+        },
+        {
+          "trigger": "template",
+          "value_template": "{% if not input_liming_protection%}\n  {{ false }}\n{% else %}\n  {% set enable_liming = true %}\n  {% if input_mode_winter != none %}\n    {% set enable_liming = is_state(input_mode_winter,'on') or input_liming_in_winter %}\n  {% endif %}\n\n  {% set is_liming_day = input_liming_protection_day == now().strftime('%a') %}\n  {% set is_liming_time = input_liming_protection_time[:-3] in now().strftime('%H:%M') %}\n\n  {{ not (enable_liming and is_liming_day and is_liming_time) }}\n{% endif %}\n",
+          "id": "temperature_change_liming_protection_off"
+        },
+        {
+          "trigger": "template",
+          "id": "temperature_change_frost_protection_on",
+          "for": {
+            "days": 0,
+            "hours": 0,
+            "minutes": 0,
+            "seconds": 0
+          },
+          "value_template": "{% set now_ts = now() %} {% set frost_protection_timestamp = as_datetime(now_ts) - timedelta(**input_frost_protection_duration) %} {% if frost_protection_timestamp == now_ts %}\n  {{ false }}\n{% else %}\n  \n  {% set relevant_entities = [input_presence_sensor] + [input_mode_guest] + input_persons %}\n  {% set relevant_entities_count = relevant_entities | reject('eq',none) | list | count %}\n\n  {% if relevant_entities_count > 0 %}\n    {% set presence_count = [input_presence_sensor] \n        | reject('eq',none)\n        | reject('is_state','on')\n        | list\n        | count %}\n\n    {% set guest_mode_count = [input_mode_guest] \n        | reject('eq',none)\n        | reject('is_state','on')\n        | list\n        | count %}\n\n    {% set person_count = input_persons\n        | reject('is_state','home')\n        | list\n        | count %}\n\n    {{ presence_count + guest_mode_count + person_count == relevant_entities_count }}\n  {% else %}\n    {{ false }}\n  {% endif %}\n{% endif %}\n"
+        }
+      ],
+      "id": "1724749494825",
+      "alias": "Arbeitszimmer Heizung",
+      "description": ""
+    },
+    "blueprint_inputs": {
+      "id": "1724749494825",
+      "alias": "Arbeitszimmer Heizung",
+      "description": "",
+      "use_blueprint": {
+        "path": "panhans/advanced_heating_control.yaml",
+        "input": {
+          "input_trvs": [
+            "climate.arbeitszimmer_heizung"
+          ],
+          "input_temperature_sensor": "sensor.arbeitszimmer_temperatur_temperature",
+          "input_force_max_temperature": "input_boolean.heizung_max_uberall",
+          "input_schedulers": [
+            "schedule.heizplan_arbeitszimmer"
+          ],
+          "input_windows": [
+            "binary_sensor.arbeitszimmer_kontakt_fenster_rechts_contact"
+          ],
+          "input_mode_winter": "input_boolean.winter_modus",
+          "input_calibration_generic": false,
+          "input_off_instead_of_eco": true,
+          "input_log_level": "warning",
+          "input_temperature_comfort_static": 22,
+          "input_temperature_comfort": "input_number.temperatur_arbeitszimmer",
+          "input_presence_reaction_off_time": {
+            "hours": 0,
+            "minutes": 5,
+            "seconds": 0
+          },
+          "input_off_if_above_room_temperature": true,
+          "input_valve_positioning_enabled": false,
+          "input_startup_delay": {
+            "hours": 0,
+            "minutes": 2,
+            "seconds": 0
+          },
+          "input_hvac_mode": "heat"
+        }
+      }
+    },
+    "context": {
+      "id": "01JG1J42PNAFNKZT9TS5ZYXSNT",
+      "parent_id": "01JG1J35D2WAN7R9ADNE6WDR8W",
+      "user_id": null
+    }
+  },
+  "logbookEntries": [
+    {
+      "name": "Arbeitszimmer Heizung",
+      "message": "triggered by binary_sensor.arbeitszimmer_kontakt_fenster_rechts_contact via template",
+      "source": "binary_sensor.arbeitszimmer_kontakt_fenster_rechts_contact via template",
+      "entity_id": "automation.arbeitszimmer_heizung",
+      "context_id": "01JG1J42PNAFNKZT9TS5ZYXSNT",
+      "domain": "automation",
+      "when": 1735219350.2713852
+    },
+    {
+      "state": "2024-12-26T13:22:30.304533+00:00",
+      "entity_id": "scene.arbeitszimmer_heizung_window",
+      "when": 1735219350.3046231,
+      "context_event_type": "automation_triggered",
+      "context_domain": "automation",
+      "context_name": "Arbeitszimmer Heizung",
+      "context_message": "triggered by binary_sensor.arbeitszimmer_kontakt_fenster_rechts_contact via template",
+      "context_source": "binary_sensor.arbeitszimmer_kontakt_fenster_rechts_contact via template",
+      "context_entity_id": "automation.arbeitszimmer_heizung"
+    }
+  ]
+}
